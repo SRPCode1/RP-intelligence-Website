@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO & Meta -->
+    <title>Stefan Regensburger-Patzak – AI & Digital Transformation Architect | Power Platform Spezialist</title>
+    <meta name="description" content="Experte für KI & digitale Transformation mit Fokus auf Power Platform, Low-Code und Citizen Development. Stefan Regensburger-Patzak (SRP-Solutions).">
+    <meta property="og:title" content="Stefan Regensburger-Patzak – AI & Digital Transformation Architect | SRP-Solutions">
+    <meta property="og:description" content="Demokratisierung von KI & Förderung von Citizen Development mit Power Platform.">
+    <meta property="og:image" content="images/DEIN-OG-BILD.jpg"> <!-- Ersetze dies mit dem Pfad zu deinem OG-Bild im images Ordner -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.DEINE-DOMAIN-HIER.de"> <!-- Ersetze dies mit deiner Domain -->
+
+    <!-- Sicherheits-Header -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' https://via.placeholder.com data: images/; connect-src 'self' https://cdnjs.cloudflare.com; frame-ancestors 'none';">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --primary-color: #0078D4;
+            --secondary-color: #0D47A1;
+            --accent-yellow: #F9A825;
+            /* --accent-purple: #84369B; -- Entfernt, da Tabs jetzt Blau/Gelb/Grau sind */
+            --tab-active-bg: var(--primary-color); /* Hauptfarbe für aktiven Tab */
+            --tab-active-text: var(--text-light);
+            --tab-inactive-bg: #e9ecef; /* Heller Grauton für inaktive Tabs */
+            --tab-inactive-text: var(--text-color);
+            --background-color: #FFFFFF;
+            --light-bg-color: #F4F6F9;
+            --text-color: #1C1C1C;
+            --text-light: #FFFFFF;
+            --text-muted: #6c757d;
+            --border-color: #dee2e6;
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Open Sans', sans-serif;
+            --section-spacing: 70px;
+            --container-width: 1140px;
+            --border-radius: 8px;
+            --box-shadow-light: 0 4px 12px rgba(0,0,0,0.06);
+            --box-shadow-medium: 0 6px 20px rgba(0,0,0,0.09);
+        }
+        /* ... (Restliches CSS von vorher, hier nicht komplett wiederholt zur Kürze) ... */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-secondary); color: var(--text-color); background-color: var(--background-color); line-height: 1.7; font-size: 16px; }
+        .container { width: 90%; max-width: var(--container-width); margin: 0 auto; padding: 0 15px; }
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); color: var(--secondary-color); margin-bottom: 1rem; line-height: 1.3; font-weight: 600; }
+        h1 { font-size: 2.8rem; color: var(--primary-color); font-weight: 700; }
+        h2 { font-size: 2.2rem; color: var(--primary-color); font-weight: 700;}
+        h3 { font-size: 1.5rem; } h4 { font-size: 1.2rem; }
+        p { margin-bottom: 1rem; }
+        a { color: var(--primary-color); text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: var(--accent-yellow); }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .btn { display: inline-block; padding: 12px 28px; border-radius: var(--border-radius); font-family: var(--font-primary); font-weight: 600; text-align: center; transition: all 0.3s ease; cursor: pointer; border: none; font-size: 1rem; }
+        .btn-primary { background-image: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color)); color: var(--text-light); border: none; box-shadow: 0 4px 10px rgba(0, 120, 212, 0.3); }
+        .btn-primary:hover { background-image: linear-gradient(to bottom right, var(--secondary-color), var(--primary-color)); box-shadow: 0 6px 15px rgba(0, 120, 212, 0.4); transform: translateY(-2px); }
+        .btn-accent { background-image: linear-gradient(to bottom right, var(--accent-yellow), #FFC107); color: var(--text-color); border: none; box-shadow: 0 4px 10px rgba(249, 168, 37, 0.4); }
+        .btn-accent:hover { background-image: linear-gradient(to bottom right, #FFC107, var(--accent-yellow)); box-shadow: 0 6px 15px rgba(249, 168, 37, 0.5); transform: translateY(-2px); }
+
+        .content-section { padding-top: var(--section-spacing); padding-bottom: var(--section-spacing); }
+        .bg-light { background-color: var(--light-bg-color); }
+        .section-title { text-align: center; margin-bottom: 40px; color: var(--primary-color); position: relative; padding-bottom: 10px; font-weight: 700;}
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: var(--accent-yellow); }
+        .text-center { text-align: center; }
+
+        #header { background-color: var(--background-color); padding: 15px 0; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+        #header nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-primary); font-size: 1.8rem; font-weight: 700; color: var(--primary-color); }
+        .logo:hover { color: var(--secondary-color); }
+        .nav-links { list-style: none; display: flex; } .nav-links li { margin-left: 25px; }
+        .nav-links a { font-family: var(--font-primary); font-weight: 500; color: var(--text-color); padding: 5px 0; position: relative; font-size: 0.95rem;}
+        .nav-links a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: var(--accent-yellow); transition: width 0.3s ease; }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+        .hamburger { display: none; background: none; border: none; color: var(--text-color); font-size: 1.5rem; cursor: pointer; }
+
+        .hero-section { background: linear-gradient(rgba(13, 71, 161, 0.7), rgba(0, 120, 212, 0.8)), url('images/DEIN-HERO-HINTERGRUND.jpg') no-repeat center center/cover; color: var(--text-light); min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px; }
+        .hero-content h1 { font-size: 3.2rem; font-weight: 800; color: var(--text-light); margin-bottom: 0.5rem; }
+        .hero-content h1 .highlight { color: var(--accent-yellow); }
+        .hero-content .subtitle { font-size: 1.6rem; font-weight: 600; color: var(--text-light); margin-bottom: 1rem; opacity: 0.9; }
+        .hero-content .tagline { font-size: 1.1rem; max-width: 750px; margin: 0 auto 2.5rem auto; color: var(--text-light); opacity: 0.95; }
+
+        .about-content { display: flex; align-items: center; gap: 50px; }
+        .about-image { flex: 0 0 300px; }
+        .about-image img { border-radius: 50%; box-shadow: 0 5px 20px rgba(0, 120, 212, 0.2); border: 5px solid var(--background-color); }
+        .about-text { flex: 1; } .about-text p strong { color: var(--primary-color); font-weight: 600; }
+
+        /* Meine Arbeitsweise - Ihr Vorteil Sektion */
+        #why-work-with-me .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+        .feature-item { background: var(--background-color); padding: 25px; border-radius: var(--border-radius); box-shadow: var(--box-shadow-light); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;}
+        .feature-item:hover { transform: translateY(-5px); box-shadow: var(--box-shadow-medium); }
+        .feature-item i { font-size: 2.2rem; color: var(--accent-yellow); margin-bottom: 15px; display: block; }
+        .feature-item h3 { color: var(--secondary-color); font-size: 1.3rem; margin-bottom: 10px; }
+        .feature-item p { font-size: 0.95rem; }
+
+
+        /* Selected Project Experience / References Section */
+        .project-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            background-color: var(--tab-inactive-bg); /* Grauer Hintergrund für Tab-Container */
+            border-radius: var(--border-radius);
+            padding: 5px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: var(--box-shadow-light);
+        }
+        .project-tab-button {
+            background-color: transparent;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: var(--font-primary);
+            font-weight: 600;
+            color: var(--tab-inactive-text);
+            border-radius: var(--border-radius);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .project-tab-button.active {
+            background-color: var(--tab-active-bg); /* Blau für aktiven Tab */
+            color: var(--tab-active-text);
+            box-shadow: 0 2px 5px rgba(0, 120, 212, 0.4);
+        }
+         .project-tab-button:not(.active):hover {
+            background-color: #d1d5db; /* Etwas dunkleres Grau für Hover auf inaktiven Tabs */
+        }
+
+        .project-tab-content { display: none; }
+        .project-tab-content.active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .industry-title { font-size: 1.8rem; color: var(--primary-color); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--accent-yellow); display: inline-block; }
+        .industry-title i { margin-right: 10px; color: var(--accent-yellow); }
+
+        .key-roles h4 { font-size: 1.1rem; color: var(--secondary-color); margin-bottom: 15px; }
+        .key-roles ul { list-style: none; padding-left: 0; margin-bottom: 30px; }
+        .key-roles li { margin-bottom: 10px; display: flex; align-items: flex-start; }
+        .key-roles li .role-number { background-color: var(--accent-yellow); color: var(--text-color); border-radius: 50%; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.9em; margin-right: 12px; flex-shrink: 0; }
+        .key-roles li .role-text { flex-grow: 1; }
+
+        .project-cards-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .project-card { background-color: var(--background-color); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 25px; box-shadow: var(--box-shadow-light); }
+        .project-card h4 { color: var(--secondary-color); font-size: 1.3rem; margin-bottom: 10px; }
+        .project-card .project-description { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; min-height: 50px; }
+        .project-card .project-meta { list-style: none; padding-left: 0; margin-bottom: 15px; }
+        .project-card .project-meta li { display: flex; align-items: center; margin-bottom: 8px; font-size: 0.9rem; }
+        .project-card .project-meta i { color: var(--primary-color); margin-right: 8px; width: 16px; text-align: center; }
+        .project-card .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+        .project-card .project-tags span { background-color: var(--light-bg-color); color: var(--text-muted); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; border: 1px solid var(--border-color); }
+        .view-details-button { background: none; border: none; color: var(--primary-color); font-weight: 600; cursor: pointer; padding: 5px 0; margin-top:10px; display: inline-flex; align-items: center; }
+        .view-details-button i { margin-left: 5px; transition: transform 0.3s ease; }
+        .view-details-button.open i { transform: rotate(180deg); }
+        .project-details-content { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); animation: fadeIn 0.5s; }
+        .project-details-content h5 { color: var(--secondary-color); margin-bottom: 5px; font-size: 1rem; }
+        .project-details-content ul { list-style-position: inside; padding-left: 0; }
+        .project-details-content ul li { font-size: 0.9rem; margin-bottom: 5px; }
+
+        /* Skills Section */
+        #skills .top-skills-intro { text-align: center; margin-bottom: 20px; font-size: 1.1rem; color: var(--text-muted); }
+        #skills .top-skills-grid-revised { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
+        .top-skill-card-revised { background-color: var(--background-color); border: 1px solid var(--border-color); padding: 25px; border-radius: var(--border-radius); text-align: left; box-shadow: var(--box-shadow-light); }
+        .top-skill-card-revised i { font-size: 2rem; margin-bottom: 10px; color: var(--primary-color); display: block; /* Optional: Icon oben zentriert */ text-align: center; }
+        .top-skill-card-revised h4 { color: var(--primary-color); font-size: 1.3rem; margin-bottom: 10px; text-align: center;}
+        .top-skill-card-revised p { font-size: 0.95rem; color: var(--text-muted); text-align: left;}
+
+        .skills-content { display: flex; gap: 40px; flex-wrap: wrap; }
+        .skills-column { flex: 1; min-width: 300px; }
+        .skills-column h3 { color: var(--primary-color); margin-bottom: 20px; padding-bottom: 5px; border-bottom: 2px solid var(--accent-yellow); display: inline-block; }
+        .skills-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skills-tags span { background-color: var(--light-bg-color); color: var(--text-color); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #ddd; transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+        .skills-tags span:hover { background-color: var(--primary-color); color: var(--text-light); border-color: var(--primary-color); }
+        
+        /* Zertifizierungen angepasst */
+        .certifications-list-revised { list-style: none; padding-left: 0; }
+        .certifications-list-revised li { display: flex; align-items: center; margin-bottom: 12px; font-size: 1rem; }
+        .certifications-list-revised li i.fa-award { color: var(--accent-yellow); font-size: 1.4rem; margin-right: 12px; min-width: 25px; /* Für Ausrichtung */ }
+
+
+        /* Contact Section */
+        .contact-section { background-color: var(--secondary-color); color: var(--text-light); }
+        .contact-section .section-title { color: var(--text-light); }
+        .contact-section .section-title::after { background-color: var(--accent-yellow); }
+        .contact-section p { color: #e0e0e0; margin-bottom: 30px; font-size: 1.1rem; }
+        .contact-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .contact-buttons .btn { min-width: 260px; padding: 15px 30px; font-size: 1.1rem; }
+        .contact-buttons .btn i { margin-right: 10px; }
+
+        /* Footer */
+        #footer { background-color: var(--text-color); color: #ccc; text-align: center; padding: 40px 0; font-size: 0.9rem; }
+        #footer p { margin-bottom: 8px; } #footer a { color: #ddd; text-decoration: underline; }
+        #footer a:hover { color: var(--accent-yellow); } .footer-links { margin-top: 10px; } .footer-links a { margin: 0 10px; }
+
+        .scroll-to-top { position: fixed; bottom: 20px; right: 20px; background-color: var(--primary-color); color: white; width: 45px; height: 45px; border-radius: 50%; text-align: center; line-height: 45px; font-size: 1.3rem; display: none; transition: opacity 0.3s ease, visibility 0.3s ease, background-color 0.3s ease; z-index: 999; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        .scroll-to-top:hover { background-color: var(--accent-yellow); color: var(--text-color); }
+
+        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .animate-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+
+        /* Responsive Design */
+        @media (max-width: 992px) { /* ... (vorherige responsive Styles hier einfügen) ... */ }
+        @media (max-width: 768px) {
+            body { font-size: 15px; } h1 { font-size: 2.4rem; } h2 { font-size: 2rem; } h3 { font-size: 1.4rem; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--background-color); box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 10px 0; }
+            .nav-links.active { display: flex; } .nav-links li { margin-left: 0; text-align: center; }
+            .nav-links a { display: block; padding: 12px 20px; } .nav-links a::after { display: none; }
+            .nav-links a:hover { background-color: var(--light-bg-color); } .hamburger { display: block; }
+            .hero-section { padding-top: 70px; height: auto; min-height: 85vh; padding-bottom: 40px; }
+            .hero-content h1 { font-size: 2.5rem; } .hero-content .subtitle { font-size: 1.3rem; }
+            .about-content { flex-direction: column; text-align: center; }
+            .about-image { margin-bottom: 30px; max-width: 220px; margin-left: auto; margin-right: auto; }
+            #why-work-with-me .feature-grid { grid-template-columns: 1fr; }
+            .project-tabs { flex-direction: column; max-width: 100%; }
+            .project-tab-button { margin-bottom: 5px; }
+            .project-cards-container { grid-template-columns: 1fr; }
+            #skills .top-skills-grid-revised { grid-template-columns: 1fr; }
+            .skills-content { flex-direction: column; }
+            .contact-buttons { flex-direction: column; } .contact-buttons .btn { width: 100%; margin-bottom: 10px; }
+        }
+        @media (max-width: 480px) { /* ... (vorherige responsive Styles hier einfügen) ... */ }
+
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <nav class="container">
+            <a href="#hero" class="logo">SRP-Solutions</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">Über Mich</a></li>
+                <li><a href="#why-work-with-me">Arbeitsweise</a></li> <!-- Angepasst -->
+                <li><a href="#references">Referenzen</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger-menu"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section (wie vorher) -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <h1 class="animate-on-scroll">Stefan Regensburger-Patzak</h1>
+            <p class="subtitle animate-on-scroll">AI & Digital Transformation Architect</p>
+            <p class="tagline animate-on-scroll">Ich <span class="highlight">demokratisiere</span> Künstliche Intelligenz und fördere <span class="highlight">Citizen Development</span> durch maßgeschneiderte Power Platform Lösungen – für innovative und effiziente Arbeitsabläufe.</p>
+            <a href="#contact" class="btn btn-accent animate-on-scroll">Lassen Sie uns sprechen</a>
+        </div>
+    </section>
+
+
+    <!-- About Section (wie vorher mit Ergänzung) -->
+    <section id="about" class="content-section">
+         <div class="container">
+            <h2 class="section-title animate-on-scroll">Über Mich & Meine Mission</h2>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <img src="images/profile-pic.jpg" alt="Stefan Regensburger-Patzak - AI & Digital Transformation Architect">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <p>Herzlich willkommen! Mein Name ist Stefan Regensburger-Patzak. Als Ihr Architekt für <strong>Künstliche Intelligenz und Digitale Transformation</strong> schlage ich die Brücke zwischen komplexer Technologie und pragmatischen Geschäftslösungen.</p>
+                    <p>Meine Mission ist die <strong>Demokratisierung von Künstlicher Intelligenz</strong>. Mit innovativen Methoden, Trainings und sowohl technischer als auch strategischer Beratung zu Governance und Security habe ich bereits in der Vergangenheit einen sicheren Rahmen für Firmen geschaffen, um KI-Lösungen selbst erfolgreich in ihre Unternehmen zu bringen. Dabei setze ich unter anderem auf Microsoft Produkte wie die Power Platform und deren starke Interoperabilität mit Copilot-Technologien. Als offizieller Trainer für Microsoft (u.a. <strong>"App in a Day", "RPA in a Day"</strong>) und von der IHK Regensburg zertifizierter Ausbilder, können Ihre Mitarbeiter in einer gestärkten Community mit mir als Sparringspartner bald selbst IT-Lösungen bauen.</p>
+                    <p>Damit wird die Workforce von morgen ergänzt um "digitale Mitarbeiter" – ein Thema, das meine absolute Passion ist und zu dem ich Ihnen gern mehr im persönlichen Gespräch erzähle. Moderne Werkzeuge spielen dabei eine Schlüsselrolle: So wurde auch diese Webseite und diverse Applikationen von mir mittels "Vibe-Coding" und KI-Unterstützung selbst gebaut. Gerne zeige ich auch Ihren Mitarbeitern, wie sie KI sicher und erfolgreich für solche Citizen Development Projekte nutzen können.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meine Arbeitsweise - Ihr Vorteil Section -->
+    <section id="why-work-with-me" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Meine Arbeitsweise – Ihr Vorteil</h2>
+             <p class="text-center animate-on-scroll" style="max-width: 850px; margin-left: auto; margin-right: auto; margin-bottom: 40px;">
+                Ich verbinde strategisches Denken mit praktischer Umsetzung, um echten Mehrwert für Ihr Unternehmen zu schaffen. Mein Fokus liegt darauf, Technologien verständlich zu machen und Lösungen zu implementieren, die wirklich funktionieren und messbare Erfolge liefern – oft im Bereich von mehreren hunderttausend Euro jährlicher Einsparung für meine Kunden.
+            </p>
+            <div class="feature-grid">
+                <div class="feature-item animate-on-scroll">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovative Lösungen</h3>
+                    <p>Ich entwickle zukunftsorientierte Strategien und nutze modernste Technologien (KI, Power Platform, RPA), um Ihre Herausforderungen kreativ und effektiv zu lösen.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Empowerment im Fokus</h3>
+                    <p>Mein Ziel ist es, Ihre Mitarbeiter durch Citizen Development und intuitive Werkzeuge zu befähigen, aktiv an der digitalen Gestaltung teilzuhaben und als Projektleiter internationale Teams zum Erfolg zu führen.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <i class="fas fa-handshake-angle"></i>
+                    <h3>Partnerschaftlich & Transparent</h3>
+                    <p>Ich arbeite eng mit Ihnen zusammen, kommuniziere offen und sorge für eine klare Nachvollziehbarkeit aller Prozessschritte und Ergebnisse. Meine Erfahrungen, u.a. aus einem Jahr in Südamerika, bereichern dabei die interkulturelle Zusammenarbeit.</p>
+                </div>
+                <div class="feature-item animate-on-scroll">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Messbarer Erfolg</h3>
+                    <p>Gemeinsam definieren wir klare Ziele und KPIs, um den Erfolg der digitalen Transformation und Prozessoptimierung sichtbar und finanziell messbar zu machen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Project Experience / References Section (wie im vorherigen Output, mit neuem Tab-Styling) -->
+    <section id="references" class="content-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Ausgewählte Projekterfahrungen</h2>
+            <p class="text-center animate-on-scroll" style="max-width: 850px; margin-left: auto; margin-right: auto; margin-bottom: 30px;">
+                Entdecken Sie, wie ich Unternehmen bei der Transformation ihrer Geschäftsprozesse unterstützt und durch innovative Technologielösungen messbare Ergebnisse erzielt habe.
+                Meine Ansätze basieren auf mehrjähriger Erfahrung bei Top-Beratungen wie <strong>Accenture und Deloitte</strong> sowie als offizieller Trainer für <strong>Microsoft ("App in a Day", "RPA in a Day")</strong>.
+            </p>
+
+            <div class="project-tabs animate-on-scroll">
+                <button class="project-tab-button active" data-tab="automotive">Automotive</button>
+                <button class="project-tab-button" data-tab="industrial">Industrial</button>
+                <button class="project-tab-button" data-tab="financial">Financial</button>
+            </div>
+
+            <!-- Automotive Tab Content -->
+            <div id="automotive" class="project-tab-content active animate-on-scroll">
+                <h3 class="industry-title"><i class="fas fa-car"></i>Automotive</h3>
+                <div class="key-roles">
+                    <h4>Schlüsselrollen & Verantwortlichkeiten:</h4>
+                    <ul>
+                        <li><span class="role-number">1</span><span class="role-text">Solution Architect - Power Platform Solutions</span></li>
+                        <li><span class="role-number">2</span><span class="role-text">Team Lead Fusion Development Projects</span></li>
+                        <li><span class="role-number">3</span><span class="role-text">PowerPlatform Solution Design and Delivery Lead für bis zu 8.000 User</span></li>
+                        <li><span class="role-number">4</span><span class="role-text">Trainer RPA & Process Automation</span></li>
+                        <li><span class="role-number">5</span><span class="role-text">Product Owner - Produktions-zentrale Industrie 4.0 Initiativen</span></li>
+                    </ul>
+                </div>
+                <div class="project-cards-container">
+                    <div class="project-card">
+                        <h4>PowerPlatform Solutions for Global Teams</h4>
+                        <p class="project-description">Konzeption und Implementierung von PowerPlatform-Lösungen für mehrere Abteilungen zur globalen Kollaboration.</p>
+                        <ul class="project-meta">
+                            <li><i class="fas fa-clock"></i>10 Monate</li>
+                            <li><i class="fas fa-rocket"></i>Erfolgreiche Lösungen für bis zu 8.000 User mit hoher Akzeptanzrate deployed.</li>
+                        </ul>
+                        <div class="project-tags"><span>PowerPlatform</span><span>Solution Architecture</span><span>Enterprise Scale</span></div>
+                        <button class="view-details-button">View details <i class="fas fa-chevron-down"></i></button>
+                        <div class="project-details-content">
+                            <h5>Challenge:</h5> <p>Ineffiziente, manuelle Prozesse und mangelnde Datenkonsistenz über global verteilte Teams hinweg.</p>
+                            <h5>Solution:</h5> <ul><li>Entwicklung einer zentralen Power App zur Datenerfassung.</li><li>Automatisierung von Reporting-Prozessen mit Power Automate.</li><li>Power BI Dashboards für Echtzeit-Monitoring.</li></ul>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Process Automation Implementation</h4>
+                        <p class="project-description">Neugestaltung und Automatisierung von Produktionsplanungsprozessen mittels Power Automate.</p>
+                        <ul class="project-meta">
+                            <li><i class="fas fa-clock"></i>6 Wochen</li>
+                            <li><i class="fas fa-euro-sign"></i>Kostenreduktion um ca. 500.000 € pro Jahr.</li>
+                        </ul>
+                        <div class="project-tags"><span>RPA</span><span>Process Optimization</span><span>Cost Reduction</span></div>
+                        <button class="view-details-button">View details <i class="fas fa-chevron-down"></i></button>
+                        <div class="project-details-content">
+                           <h5>Challenge:</h5> <p>Zeitaufwendige und fehleranfällige manuelle Planungsschritte in der Produktion.</p>
+                           <h5>Solution:</h5> <ul><li>Analyse und Re-Design des bestehenden Prozesses.</li><li>Implementierung von Power Automate Flows zur Automatisierung von Datentransfers und Benachrichtigungen.</li><li>Schulung der Mitarbeiter.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industrial Equipment Tab Content (Inhalt wie vorher) -->
+            <div id="industrial" class="project-tab-content animate-on-scroll">
+                <h3 class="industry-title"><i class="fas fa-industry"></i>Industrial Equipment</h3>
+                 <div class="key-roles">
+                    <h4>Schlüsselrollen & Verantwortlichkeiten:</h4>
+                    <ul>
+                        <li><span class="role-number">1</span><span class="role-text">Solution Architect - MES Solution design</span></li>
+                        <li><span class="role-number">2</span><span class="role-text">Project lead - Equipment-as-a-Service IoT Platform & Smart maintenance</span></li>
+                        <li><span class="role-number">3</span><span class="role-text">Agile & PLM Coach - Digitalization & Agile Transformation (SAFe 4.0)</span></li>
+                        <li><span class="role-number">4</span><span class="role-text">Integration Manager - product data management & production networks</span></li>
+                    </ul>
+                </div>
+                <div class="project-cards-container">
+                     <div class="project-card">
+                        <h4>Equipment-as-a-Service IoT Platform</h4>
+                        <p class="project-description">Konzeption und Implementierung einer IoT-fähigen Plattform für Anlagenüberwachung und -wartung.</p>
+                        <ul class="project-meta">
+                            <li><i class="fas fa-clock"></i>8 Monate</li>
+                            <li><i class="fas fa-chart-line"></i>Neues Umsatzpotenzial mit 30% YoY Wachstumspotenzial geschaffen.</li>
+                        </ul>
+                        <div class="project-tags"><span>IoT</span><span>Equipment-as-a-Service</span><span>Predictive Maintenance</span></div>
+                        <button class="view-details-button">View details <i class="fas fa-chevron-down"></i></button>
+                        <div class="project-details-content">
+                           <h5>Challenge:</h5> <p>Fehlende Echtzeit-Einblicke in den Zustand von Maschinen und reaktive Wartungsansätze.</p>
+                           <h5>Solution:</h5> <ul><li>Aufbau einer Azure IoT-basierten Plattform.</li><li>Integration von Sensordaten und Entwicklung von Predictive Maintenance Algorithmen.</li><li>Schaffung eines neuen Service-Geschäftsmodells.</li></ul>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>MES Solution Implementation</h4>
+                        <p class="project-description">Architektur und Einführung eines Manufacturing Execution Systems mit Echtzeit-Analyse.</p>
+                        <ul class="project-meta">
+                            <li><i class="fas fa-clock"></i>12 Monate</li>
+                            <li><i class="fas fa-check-circle"></i>35% Verbesserung der Produktionseffizienz und Qualitäts-KPIs.</li>
+                        </ul>
+                        <div class="project-tags"><span>MES</span><span>Manufacturing</span><span>Real-time Analytics</span></div>
+                        <button class="view-details-button">View details <i class="fas fa-chevron-down"></i></button>
+                        <div class="project-details-content">
+                           <h5>Challenge:</h5> <p>Mangelnde Transparenz und Steuerbarkeit der Fertigungsprozesse.</p>
+                           <h5>Solution:</h5> <ul><li>Auswahl und Anpassung eines geeigneten MES-Systems.</li><li>Integration mit bestehenden ERP- und Produktionssystemen.</li><li>Echtzeit-Dashboards für das Management.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Financial Services Tab Content (Inhalt wie vorher) -->
+            <div id="financial" class="project-tab-content animate-on-scroll">
+                <h3 class="industry-title"><i class="fas fa-landmark"></i>Financial Services</h3>
+                 <div class="key-roles">
+                    <h4>Schlüsselrollen & Verantwortlichkeiten:</h4>
+                    <ul>
+                        <li><span class="role-number">1</span><span class="role-text">RPA Solution Architect</span></li>
+                        <li><span class="role-number">2</span><span class="role-text">Process Mining Expert</span></li>
+                        <li><span class="role-number">3</span><span class="role-text">AI Implementation Lead</span></li>
+                        <li><span class="role-number">4</span><span class="role-text">Digital Workforce Consultant</span></li>
+                    </ul>
+                </div>
+                <div class="project-cards-container">
+                    <div class="project-card">
+                        <h4>RPA and AI Automation</h4>
+                        <p class="project-description">Design und Implementierung intelligenter Automatisierung für Finanzoperationen.</p>
+                        <ul class="project-meta">
+                            <li><i class="fas fa-clock"></i>4 Wochen Entwicklungszeit</li>
+                            <li><i class="fas fa-users-cog"></i>Einsparung von 47 FTE/Jahr.</li>
+                        </ul>
+                        <div class="project-tags"><span>RPA</span><span>AI</span><span>Process Optimization</span></div>
+                        <button class="view-details-button">View details <i class="fas fa-chevron-down"></i></button>
+                        <div class="project-details-content">
+                           <h5>Challenge:</h5> <p>Hoher manueller Aufwand und Fehleranfälligkeit bei der Bearbeitung von Finanztransaktionen.</p>
+                           <h5>Solution:</h5> <ul><li>Prozessanalyse mittels Process Mining.</li><li>Entwicklung von RPA-Bots zur Automatisierung von Dateneingaben und -prüfungen.</li><li>Integration von KI-Komponenten zur Dokumentenanalyse.</li></ul>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Automated Incoming Goods Processing</h4>
+                        <p class="project-description">Erstellung einer End-to-End-Lösung für die Automatisierung von Wareneingang und Abgleich.</p>
+                        <ul class="project-meta">
+                            <li><i class="fas fa-clock"></i>4 Wochen (2 Wochen PoC + 2 Wochen SAP/Dynamics Integration)</li>
+                            <li><i class="fas fa-cogs"></i>Nahtlose Integration in bestehende ERP-Systeme.</li>
+                        </ul>
+                        <div class="project-tags"><span>Process Automation</span><span>SAP Integration</span><span>Dynamics 365</span></div>
+                        <button class="view-details-button">View details <i class="fas fa-chevron-down"></i></button>
+                        <div class="project-details-content">
+                           <h5>Challenge:</h5> <p>Langwieriger manueller Abgleich von Lieferscheinen und Bestellungen im Wareneingang.</p>
+                           <h5>Solution:</h5> <ul><li>Entwicklung einer Power Automate Lösung mit OCR-Funktionen.</li><li>Anbindung an SAP und Dynamics 365 über Custom Connectors.</li><li>Automatisierte Buchungsprozesse.</li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Meine Kernkompetenzen & Technologien</h2>
+            <p class="top-skills-intro animate-on-scroll">Mein breites Know-how ermöglicht maßgeschneiderte Lösungen. Besonders hervorzuheben sind:</p>
+            <div class="top-skills-grid-revised animate-on-scroll">
+                <div class="top-skill-card-revised">
+                    <i class="fas fa-cogs"></i>
+                    <h4>Microsoft Power Platform</h4>
+                    <p>Als zertifizierter Solution Architect nutze ich die volle Bandbreite der Power Platform (Power Apps, Automate, BI, Virtual Agents, Pages), um schnell robuste und skalierbare Low-Code-Anwendungen zu entwickeln, die Ihre Geschäftsprozesse digitalisieren und Mitarbeiter befähigen.</p>
+                </div>
+                <div class="top-skill-card-revised">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Hyperautomation & KI</h4>
+                    <p>Ich kombiniere RPA, Process Mining und KI (inkl. Azure OpenAI & Copilots), um End-to-End-Automatisierungslösungen zu schaffen, die Effizienz steigern, Kosten senken und datengesteuerte Entscheidungen ermöglichen.</p>
+                </div>
+                <div class="top-skill-card-revised">
+                    <i class="fas fa-project-diagram"></i>
+                    <h4>Digitale Transformation & Strategie</h4>
+                    <p>Ich begleite Sie von der Strategieentwicklung über die Konzeption bis zur Implementierung digitaler Transformationsprojekte, immer mit Fokus auf nachhaltigen Mehrwert und die erfolgreiche Integration in Ihre Organisation.</p>
+                </div>
+            </div>
+
+            <div class="skills-content">
+                <div class="skills-column animate-on-scroll">
+                    <h3>Technologien & Plattformen</h3>
+                    <div class="skills-tags">
+                        <span>Microsoft Power Platform (Apps, Automate, BI, Virtual Agents, Pages)</span>
+                        <span>Microsoft Copilot Studio & Azure OpenAI</span>
+                        <span>Azure (AI Services, Functions, Logic Apps, IoT Hub)</span>
+                        <span>AWS (Grundlagen S3, Lambda, EC2)</span>
+                        <span>RPA (UiPath, Power Automate Desktop)</span>
+                        <span>Process Mining (Celonis, PAFnow)</span>
+                        <span>Low-Code/No-Code Entwicklung</span>
+                        <span>Datenbanken (SQL, Dataverse)</span>
+                        <span>API Design & Management</span>
+                    </div>
+                </div>
+                <div class="skills-column animate-on-scroll">
+                    <h3>Methoden & Frameworks</h3>
+                    <div class="skills-tags">
+                        <span>Agile (Scrum Master, Product Owner, SAFe Agilist)</span>
+                        <span>Design Thinking & UX Grundlagen</span>
+                        <span>Six Sigma Green Belt</span>
+                        <span>Innovationsmanagement & Prototyping</span>
+                        <span>Projekt- & Programmmanagement (klassisch & agil)</span>
+                        <span>Digitale Strategie & Transformation Roadmaps</span>
+                        <span>PLM/ALM Konzepte</span>
+                        <span>Change Management & Kommunikation</span>
+                        <span>Governance & Security (KI, Cloud, M365)</span>
+                    </div>
+                </div>
+            </div>
+             <div style="margin-top: 40px;" class="animate-on-scroll">
+                <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;">Zertifizierungen (Auswahl)</h3>
+                <ul class="certifications-list-revised" style="max-width: 600px; margin: 0 auto; columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+                    <li><i class="fas fa-award"></i>Microsoft Certified: Power Platform Solution Architect Expert</li>
+                    <li><i class="fas fa-award"></i>Certified Scrum Master (CSM)</li>
+                    <li><i class="fas fa-award"></i>SAFe Agilist</li>
+                    <li><i class="fas fa-award"></i>Six Sigma Green Belt</li>
+                    <li><i class="fas fa-award"></i>Design Thinking Facilitator</li>
+                    <li><i class="fas fa-award"></i>IHK Zertifizierter Ausbilder</li>
+                    <li><i class="fas fa-award"></i>(Weitere relevante Zertifikate)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (wie vorher) -->
+   <section id="contact" class="content-section contact-section">
+         <div class="container text-center">
+            <h2 class="section-title animate-on-scroll">Gemeinsam die Zukunft gestalten</h2>
+            <p class="animate-on-scroll">Sind Sie bereit, das volle Potenzial der Digitalisierung und KI für Ihr Unternehmen zu nutzen? Ich freue mich darauf, Ihre Ideen zu hören und gemeinsam innovative Lösungen zu entwickeln.</p>
+            <div class="contact-buttons animate-on-scroll">
+                <a href="https://calendly.com/stefan-regensburger92/get-to-know" target="_blank" class="btn btn-accent">
+                    <i class="fas fa-calendar-alt"></i> Kostenloses Erstgespräch
+                </a>
+                <a href="https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-linkedin"></i> Vernetzen auf LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (wie vorher) -->
+    <footer id="footer">
+        <div class="container">
+            <p>© <span id="currentYear"></span> Stefan Regensburger-Patzak | SRP-Solutions. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="impressum.html" target="_blank">Impressum</a> |
+                <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>
+            </div>
+            <p style="margin-top:15px; font-size: 0.8em;">Diese Seite wurde mit Fokus auf Professionalität, digitale Innovation und KI-Unterstützung erstellt.</p>
+        </div>
+    </footer>
+
+    <a href="#hero" class="scroll-to-top" aria-label="Nach oben scrollen"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+    // JavaScript (wie im vorherigen Output, keine Änderungen hier notwendig)
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Mobile Navigation ---
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const navLinkItems = document.querySelectorAll('.nav-links a');
+
+        if (hamburgerMenu && navLinks) {
+            hamburgerMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = hamburgerMenu.querySelector('i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
+            });
+            navLinkItems.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        hamburgerMenu.querySelector('i').classList.remove('fa-times');
+                        hamburgerMenu.querySelector('i').classList.add('fa-bars');
+                    }
+                });
+            });
+        }
+
+        // --- Active Navigation Link Highlighting on Scroll ---
+        const sections = document.querySelectorAll('section[id]');
+        const headerNavLinks = document.querySelectorAll('header nav ul li a');
+        const headerHeight = document.getElementById('header')?.offsetHeight || 70;
+
+        function updateActiveNavLink() {
+            let current = 'hero'; // Default to hero
+            const scrollPosition = window.pageYOffset + headerHeight + 150; 
+
+            sections.forEach(section => {
+                if (section.offsetTop <= scrollPosition) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            headerNavLinks.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') === '#' + current) {
+                    a.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', updateActiveNavLink);
+        updateActiveNavLink(); 
+
+        // --- Scroll to Top Button ---
+        const scrollToTopBtn = document.querySelector('.scroll-to-top');
+        if (scrollToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    if (!scrollToTopBtn.style.display || scrollToTopBtn.style.display === "none") {
+                        scrollToTopBtn.style.opacity = "0";
+                        scrollToTopBtn.style.display = "block";
+                        setTimeout(() => scrollToTopBtn.style.opacity = "1", 10);
+                    }
+                } else {
+                    scrollToTopBtn.style.opacity = "0";
+                    setTimeout(() => {
+                        if (window.pageYOffset <= 300) { scrollToTopBtn.style.display = "none";}
+                    }, 300);
+                }
+            });
+        }
+
+        // --- Footer: Current Year ---
+        const currentYearSpan = document.getElementById('currentYear');
+        if (currentYearSpan) { currentYearSpan.textContent = new Date().getFullYear(); }
+
+        // --- Subtle Animations on Scroll ---
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.05 }); 
+        animatedElements.forEach(el => observer.observe(el));
+
+        // --- Project Tabs Functionality ---
+        const tabButtons = document.querySelectorAll('.project-tab-button');
+        const tabContents = document.querySelectorAll('.project-tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId)?.classList.add('active');
+            });
+        });
+
+        // --- View/Hide Details for Project Cards ---
+        const detailsButtons = document.querySelectorAll('.view-details-button');
+        detailsButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling; 
+                const iconElement = button.querySelector('i'); // Select the icon specifically
+                
+                if (content) {
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        button.classList.remove('open');
+                        if(iconElement) iconElement.className = 'fas fa-chevron-down'; // Reset icon
+                    } else {
+                        content.style.display = 'block';
+                        button.classList.add('open');
+                        if(iconElement) iconElement.className = 'fas fa-chevron-up'; // Change icon
+                    }
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
