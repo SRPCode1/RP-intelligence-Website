@@ -1,6 +1,6 @@
-# SRP Solutions Website
+# Stefan Regensburger-Patzak - Freiberufler Website
 
-Diese statische Website wurde für SRP Solutions erstellt und wird über GitHub Pages gehostet.
+Diese statische Website wurde für Stefan Regensburger-Patzak - Freiberufler Website erstellt und wird über GitHub Pages gehostet.
 
 ## Über das Projekt
 
