@@ -9,10 +9,10 @@
     <link rel="alternate" href="https://www.rp-intelligence.de/en/" hreflang="en" />
     <link rel="alternate" href="https://www.rp-intelligence.de/es/" hreflang="es" />
 
-    <title>Professionelle KI-Lösungen & Implementierung für KMU | RP-Intelligence</title>
-    <meta name="description" content="RP-Intelligence: Ihr Reliable Partner for intelligent AI-Solutions. KI-Beratung für Mittelstand – von Strategie bis Implementierung. Erfahrung aus Top-Beratungen wie Accenture & Deloitte.">
-    <meta property="og:title" content="KI-Beratung & Digitale Transformation | RP-Intelligence">
-    <meta property="og:description" content="RP-Intelligence: Reliable Partner for intelligent AI-Solutions. KI-Beratung für Mittelstand – Strategie, Implementierung & Schulung. Erfahrung aus Accenture & Deloitte.">
+    <title>Stefan Regensburger-Patzak – KI-Beratung & Implementierung für KMU | RP-Intelligence</title>
+    <meta name="description" content="Stefan Regensburger-Patzak (RP-Intelligence): KI-Beratung für den Mittelstand – von Strategie bis Implementierung. Erfahrung aus Accenture & Deloitte.">
+    <meta property="og:title" content="Stefan Regensburger-Patzak – KI-Beratung & Digitale Transformation | RP-Intelligence">
+    <meta property="og:description" content="Stefan Regensburger-Patzak (RP-Intelligence): KI-Beratung – Strategie, Implementierung & Schulung. Erfahrung aus Accenture & Deloitte.">
     <meta property="og:image" content="images/DEIN-OG-BILD.png"> <!-- BITTE ANPASSEN (Dateiname ggf. anpassen) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.rp-intelligence.de"> <!-- BITTE ANPASSEN -->
@@ -204,6 +204,30 @@
         .skills-tags span { background-color: var(--neutral-gray-medium); color: var(--text-color); padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; border: 1px solid var(--border-color); display: inline-block; margin: 3px; transition: background-color 0.3s ease, color 0.3s ease; }
         .skills-tags span:hover { background-color: var(--primary-color); color: var(--text-light); border-color: var(--primary-color); }
 
+        /* Packages Section - Modern Cards */
+        #packages { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); }
+        .packages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; margin-top: 40px; }
+        .package-card { background: var(--background-color); border-radius: 12px; padding: 35px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; border: 2px solid transparent; position: relative; overflow: hidden; }
+        .package-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary-color), var(--accent-yellow)); }
+        .package-card:hover { transform: translateY(-8px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); border-color: var(--primary-color); }
+        .package-number { position: absolute; top: 20px; right: 25px; font-size: 3rem; font-weight: 800; color: rgba(0, 120, 212, 0.08); font-family: var(--font-primary); line-height: 1; }
+        .package-card h3 { font-size: 1.4rem; color: var(--secondary-color); margin-bottom: 12px; font-weight: 700; position: relative; z-index: 1; }
+        .package-card .package-subtitle { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5; }
+        .package-card .package-price { display: inline-block; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--text-light); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 1rem; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,120,212,0.2); }
+        .package-card .package-outcome { font-size: 0.9rem; color: var(--text-color); margin-bottom: 18px; padding: 12px; background: var(--neutral-gray-light); border-left: 3px solid var(--accent-yellow); border-radius: 4px; font-weight: 500; }
+        .package-card details { margin-top: 15px; }
+        .package-card summary { cursor: pointer; font-weight: 600; color: var(--primary-color); padding: 10px 0; font-size: 0.95rem; display: flex; align-items: center; user-select: none; }
+        .package-card summary::before { content: '+'; display: inline-block; width: 20px; height: 20px; line-height: 18px; text-align: center; border-radius: 50%; background: var(--primary-color); color: white; margin-right: 10px; font-size: 1.2rem; transition: transform 0.3s ease; }
+        .package-card details[open] summary::before { content: '−'; transform: rotate(180deg); }
+        .package-card summary:hover { color: var(--accent-yellow); }
+        .package-card details ul, .package-card details ol { margin: 15px 0 0 20px; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; }
+        .package-card details li { margin-bottom: 8px; padding-left: 5px; }
+        .package-card details p { margin-top: 12px; font-size: 0.9rem; color: var(--text-color); font-weight: 500; }
+        @media (max-width: 768px) {
+            .packages-grid { grid-template-columns: 1fr; }
+            .package-number { font-size: 2.5rem; }
+        }
+
         .contact-section { background-color: var(--secondary-color); color: var(--text-light); }
         .contact-section .section-title { color: var(--text-light); }
         .contact-section .section-title::after { background-color: var(--accent-yellow); }
@@ -267,12 +291,18 @@
       "name": "RP-Intelligence",
       "description": "RP-Intelligence: Reliable Partner for intelligent AI-Solutions. KI-Beratung für Mittelstand – Ende-zu-Ende von Strategie bis Implementierung. Erfahrung aus Top-Beratungen.",
       "url": "https://www.rp-intelligence.de",
-      "founder": {
-        "@type": "Person",
-        "name": "Stefan Regensburger-Patzak",
-        "jobTitle": "Founder/CEO - AI Director & Architect",
-        "sameAs": "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
-      },
+            "founder": {
+                "@type": "Person",
+                "name": "Stefan Regensburger-Patzak",
+                "alternateName": ["Stefan Regensburger", "Stefan Regensburger Patzak"],
+                "jobTitle": "Founder/CEO - AI Director & Architect",
+                "url": "https://www.rp-intelligence.de/",
+                "image": "https://www.rp-intelligence.de/images/profile-pic.jpg",
+                "sameAs": [
+                    "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
+                ],
+                "knowsLanguage": ["de", "en", "es"]
+            },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "München",
@@ -285,9 +315,9 @@
         "email": "Stefan@rp-intelligence.de",
         "contactType": "Customer Service"
       },
-      "sameAs": [
-        "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
-      ],
+            "sameAs": [
+                "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
+            ],
       "serviceType": "KI-Beratung, Digitale Transformation, Power Platform, RPA, Low-Code",
       "areaServed": "Deutschland",
       "keywords": "KI-Beratung, Mittelstand, Digitale Transformation, Power Platform, RPA, Low-Code, Automatisierung, Reliable Partner for intelligent AI-Solutions"
@@ -296,16 +326,22 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Stefan Regensburger-Patzak",
+            "@type": "Person",
+            "name": "Stefan Regensburger-Patzak",
+            "alternateName": ["Stefan Regensburger", "Stefan Regensburger Patzak"],
       "jobTitle": "AI Director & Architect",
       "worksFor": {
         "@type": "Organization",
         "name": "RP-Intelligence",
         "url": "https://www.rp-intelligence.de"
       },
-      "sameAs": "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/",
-      "knowsAbout": ["Artificial Intelligence", "KI-Beratung", "Digitale Transformation", "Power Platform", "RPA"]
+            "url": "https://www.rp-intelligence.de/",
+            "image": "https://www.rp-intelligence.de/images/profile-pic.jpg",
+            "sameAs": [
+                "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
+            ],
+            "knowsAbout": ["Artificial Intelligence", "KI-Beratung", "Digitale Transformation", "Power Platform", "RPA"],
+            "knowsLanguage": ["de", "en", "es"]
     }
     
     </script>
@@ -323,6 +359,7 @@
                 <li><a href="#arbeitsweise" data-key="nav-approach">Arbeitsweise</a></li>
                 <li><a href="#references" data-key="nav-references">Referenzen</a></li>
                 <li><a href="#skills" data-key="nav-skills">Skills</a></li>
+                <li><a href="#packages" data-key="nav-packages">Pakete</a></li>
                 <li><a href="#contact" data-key="nav-contact">Kontakt</a></li>
             </ul>
             <!-- single hamburger button for responsive menu -->
@@ -349,7 +386,9 @@
             <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-95" style="color: #ffffff;" data-key="hero-description">
             Wir bieten professionelle IT-Beratung, -Implementierung und -Betrieb und gestalten die Zukunft mit wegweisenden Lösungen für Ihre erfolgreiche digitale Transformation. Entdecken Sie, wie wir Ihre Herausforderungen in Chancen verwandeln als <br><strong>"Reliable Partner for intelligent AI-Solutions"</strong></br>
           </p>
-            <a href="#contact" class="btn btn-accent animate-on-scroll" data-key="hero-cta"><i class="fas fa-comments"></i> Lassen Sie uns sprechen</a>
+                        <div>
+                                <a href="#contact" class="btn btn-accent animate-on-scroll" data-key="hero-cta"><i class="fas fa-comments"></i> Lassen Sie uns sprechen</a>
+                        </div>
         </div>
     </section>
 
@@ -804,6 +843,138 @@
         </div>
     </section>
 
+    <section id="packages" class="content-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-key="packages-title">Unsere Pakete</h2>
+            <p class="text-center animate-on-scroll" style="max-width: 800px; margin: 0 auto 30px; color: var(--text-muted); font-size: 1.05rem;" data-key="packages-intro">
+                Fertige Lösungspakete für schnelle Erfolge – von KI-Integration bis strategischer Beratung. Preise verstehen sich zzgl. USt.
+            </p>
+            <div class="packages-grid">
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">01</span>
+                    <h3 data-key="package1-title">KI-Telefonie Lösungen</h3>
+                    <p class="package-subtitle" data-key="package1-subtitle">Kalenderzugriff, automatisierte Anrufe, Integration mit CRM / Ticketing-Systemen.</p>
+                    <span class="package-price" data-key="package1-price">ab 975 € einmalig</span>
+                    <div class="package-outcome" data-key="package1-outcome">
+                        <strong>Outcome:</strong> Weniger manuelle Terminierung, schnellere Lead-Reaktion, natürliche Sprachdialoge.
+                    </div>
+                    <details>
+                        <summary data-key="package1-details-title">Weitere Details</summary>
+                        <ul data-key="package1-details">
+                            <li>Initiales Setup & Konfiguration (ca. 1 Tag)</li>
+                            <li>Dialogfluss & Intent Design</li>
+                            <li>Integration (Kalender / CRM / Ticketing)</li>
+                            <li>Testcalls & Feinjustierung</li>
+                            <li>Optional: KPI Dashboard (Add-on)</li>
+                        </ul>
+                        <p><strong>Ergebnis:</strong> Spürbare Entlastung im Erstkontakt & Terminierungsprozess.</p>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">02</span>
+                    <h3 data-key="package2-title">Custom GPT Lösung</h3>
+                    <p class="package-subtitle" data-key="package2-subtitle">DSGVO-konforme GPT basierend auf Ihren Dokumenten; Chatbot/Portal on-prem oder EU-Cloud.</p>
+                    <span class="package-price" data-key="package2-price">ab 6.000 €</span>
+                    <div class="package-outcome" data-key="package2-outcome">
+                        <strong>Outcome:</strong> Antwortzeiten auf Dokumentenfragen von Wochen auf Minuten.
+                    </div>
+                    <details>
+                        <summary data-key="package2-details-title">Weitere Details</summary>
+                        <ul data-key="package2-details">
+                            <li>Dokumenten-Ingestion & Vektorisierung</li>
+                            <li>Semantische Suche & Kontext Retrieval</li>
+                            <li>Role-/Permission Layer</li>
+                            <li>Feedback Loop / Qualitätsmetriken</li>
+                            <li>Optional: On-Prem Hosting / EU-Cloud Isolation</li>
+                        </ul>
+                        <p><strong>Preisspannen:</strong> Basic (6–8k), Standard (10–14k), Premium (15k+ je nach Umfang).</p>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">03</span>
+                    <h3 data-key="package3-title">Vibe Coding Training (1 Tag)</h3>
+                    <p class="package-subtitle" data-key="package3-subtitle">Intensiv-Workshop für Teams (Keine Programmierungskenntnis erforderlich!): Hands-on Software Entwicklung mit KI.</p>
+                    <span class="package-price" data-key="package3-price">1.450 €/Tag</span>
+                    <div class="package-outcome" data-key="package3-outcome">
+                        <strong>Outcome:</strong> Demokratisierung von KI - Team kann eigene KI-/Automatisierungs-Ideen bewerten und umsetzen.
+                    </div>
+                    <details>
+                        <summary data-key="package3-details-title">Weitere Details</summary>
+                        <ol data-key="package3-details">
+                            <li>Intro & Potenzialfelder (Frontend/Backend/Datascience & mehr)</li>
+                            <li>Prompt Patterns & KI-Assistenz</li>
+                            <li>Rapid Prototyping</li>
+                            <li>Integration, Security, Deployments & Automatisierung</li>
+                            <li>Team Challenge & Abschluss</li>
+                        </ol>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">04</span>
+                    <h3 data-key="package4-title">AI Strategy / Design Thinking Workshop</h3>
+                    <p class="package-subtitle" data-key="package4-subtitle">Use-Case-Identifikation, Priorisierung, Business-Value & Roadmap.</p>
+                    <span class="package-price" data-key="package4-price">2.000 €/Tag</span>
+                    <div class="package-outcome" data-key="package4-outcome">
+                        <strong>Outcome:</strong> Priorisierte AI-Roadmap mit Quick Wins und strategischen Initiativen.
+                    </div>
+                    <details>
+                        <summary data-key="package4-details-title">Weitere Details</summary>
+                        <ul data-key="package4-details">
+                            <li>Discovery: Business-Ziele, Pain Points, Datenlage</li>
+                            <li>Ideation: Use-Case-Funnel, Impact vs. Effort</li>
+                            <li>Priorisierung: Quick Wins vs. Strategic Bets</li>
+                            <li>Roadmap & Governance-Ansätze</li>
+                            <li>Dokumentiertes Ergebnis-Deck</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">05</span>
+                    <h3 data-key="package5-title">AI Technical Due Diligence</h3>
+                    <p class="package-subtitle" data-key="package5-subtitle">Technische Bewertung: Architektur, Datenqualität, DSGVO, Skalierbarkeit.</p>
+                    <span class="package-price" data-key="package5-price">ab 5.000 €</span>
+                    <div class="package-outcome" data-key="package5-outcome">
+                        <strong>Outcome:</strong> Executive Summary + Detail-Assessment (PDF/Deck) mit Risikoanalyse.
+                    </div>
+                    <details>
+                        <summary data-key="package5-details-title">Weitere Details</summary>
+                        <ul data-key="package5-details">
+                            <li>Architektur & Komponenten (Services, Pipelines, Modelle)</li>
+                            <li>Datenqualität, Zugriff, Klassifizierung & Governance</li>
+                            <li>Security & Compliance (DSGVO, Least Privilege, Logging)</li>
+                            <li>Skalierbarkeit & Kostenmodell</li>
+                            <li>Risiko- & Reifegrad-Matrix + Empfehlungen</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">06</span>
+                    <h3 data-key="package6-title">Gemba Walk</h3>
+                    <p class="package-subtitle" data-key="package6-subtitle">Vor-Ort Analyse der Tagesabläufe (bis zu 8 Stunden) + Follow-up-Workshop und Roadmap.</p>
+                    <span class="package-price" data-key="package6-price">1.600 €/Tag</span>
+                    <div class="package-outcome" data-key="package6-outcome">
+                        <strong>Outcome:</strong> Identifizierte Anwendungsfälle & Aufdeckung von Digitalisierungspotenzialen.
+                    </div>
+                    <details>
+                        <summary data-key="package6-details-title">Weitere Details</summary>
+                        <ul data-key="package6-details">
+                            <li>Vorbereitungscall (30–45 Min) zur Zielklärung</li>
+                            <li>Vor-Ort-Begehung (bis 8h) mit Interviews</li>
+                            <li>Identifikation Anwendungsfällen & Digitalisierungspotenzialen</li>
+                            <li>Follow-up Meeting (remote) zur Maßnahmenbesprechung</li>
+                            <li>Roadmap & Next Steps</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="content-section contact-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll" data-key="contact-title">Lassen Sie uns sprechen</h2>
@@ -843,11 +1014,13 @@
                 'nav-approach': 'Arbeitsweise',
                 'nav-references': 'Referenzen',
                 'nav-skills': 'Skills',
+                'nav-packages': 'Pakete',
                 'nav-contact': 'Kontakt',
                 'hero-title': 'KI-Beratung & Digitale Transformation',
                 'hero-subtitle': 'Zuverlässiger Partner für intelligente IT-Lösungen',
                 'hero-description': 'Wir bieten professionelle IT-Beratung, -Implementierung und -Betrieb und gestalten die Zukunft mit wegweisenden Lösungen für Ihre erfolgreiche digitale Transformation. Entdecken Sie, wie wir Ihre Herausforderungen in Chancen verwandeln als <br><strong>"Reliable Partner for intelligent AI-Solutions"</strong></br>',
                 'hero-cta': '<i class="fas fa-comments"></i> Lassen Sie uns sprechen',
+                'hero-packages-btn': '<i class="fas fa-tags"></i> Zu den Paketen',
                 'about-title': 'Gründer:<br><span style="font-weight: 700;">Stefan Regensburger-Patzak</span>',
                 'about-intro': 'Mit rund 10 Jahren Erfahrung in KI-Beratung und digitaler Transformation, unter anderem bei führenden Beratungshäusern wie <strong>Accenture und Deloitte</strong>, unterstütze ich Unternehmen dabei, den technologischen Wandel erfolgreich zu gestalten und zu nutzen.',
                 'expertise-title': 'Expertise',
@@ -890,11 +1063,24 @@
                 'service2-link': 'Implementierungsberatung anfragen <i class="fas fa-arrow-right"></i>'
                 ,
                 'contact-details-title': 'Kontaktdaten',
-                'view-details': 'Details anzeigen'
+                'view-details': 'Details anzeigen',
+                'package1-details-title': 'Weitere Details',
+                'package2-details-title': 'Weitere Details',
+                'package3-details-title': 'Weitere Details',
+                'package4-details-title': 'Weitere Details',
+                'package5-details-title': 'Weitere Details',
+                'package6-details-title': 'Weitere Details',
+                'package1-price': 'ab 975 € einmalig',
+                'package2-price': 'ab 5.800 € Projektpreis',
+                'package3-price': '1.450 €/Tag',
+                'package4-price': 'ab 2.000 €/Tag',
+                'package5-price': 'ab 5.000 €',
+                'package6-price': 'ab 1.600 €/Tag'
             },
             en: {
                 'nav-founder': 'Founder',
                 'nav-services': 'Services',
+                'nav-packages': 'Packages',
                 'nav-approach': 'Approach',
                 'nav-references': 'References',
                 'nav-skills': 'Skills',
@@ -903,6 +1089,7 @@
                 'hero-subtitle': 'Reliable Partner for Intelligent IT Solutions',
                 'hero-description': 'We offer professional IT consulting, implementation, and operations, shaping the future with pioneering solutions for your successful digital transformation. Discover how we turn your challenges into opportunities as <br><strong>"Reliable Partner for intelligent AI-Solutions"</strong></br>',
                 'hero-cta': '<i class="fas fa-comments"></i> Let\'s talk',
+                'hero-packages-btn': '<i class="fas fa-tags"></i> View Packages',
                 'about-title': 'Founder:<br><span style="font-weight: 700;">Stefan Regensburger-Patzak</span>',
                 'about-intro': 'With around 10 years of experience in AI consulting and digital transformation, including at leading consulting firms like <strong>Accenture and Deloitte</strong>, I support companies in successfully shaping and utilizing technological change.',
                 'expertise-title': 'Expertise',
@@ -945,6 +1132,18 @@
                 'service2-link': 'Request implementation consulting <i class="fas fa-arrow-right"></i>',
                 'contact-details-title': 'Contact details',
                 'view-details': 'View details',
+                'package1-details-title': 'Show details',
+                'package2-details-title': 'Show details',
+                'package3-details-title': 'Show details',
+                'package4-details-title': 'Show details',
+                'package5-details-title': 'Show details',
+                'package6-details-title': 'Show details',
+                'package1-price': 'from 975 € one-time',
+                'package2-price': 'from 5,800 € project price',
+                'package3-price': '1,450 €/day',
+                'package4-price': 'from 2,000 € / day',
+                'package5-price': 'from 5,000 € (typically 7–15k)',
+                'package6-price': 'from 1,600 € / day',
                 'service3-title': 'Training & Workshops',
                 'service3-desc': 'Practice-oriented training on Artificial Intelligence, Citizen Development, and webinars on new technologies.',
                 'service3-li1': '<i class="fas fa-check"></i>AI Basics & "Vibe Coding"',
@@ -960,7 +1159,7 @@
                 'feature4': '<div class="icon-title-container"><i class="fas fa-chart-line"></i><h3>Measurable Success</h3></div> <p>Joint definition of clear goals and KPIs for visible and financially measurable success of digital transformation and process optimization.</p>',
                 'references-title': 'Selected Project Experiences',
                 'references-intro': 'Company transformations through innovative technology solutions for measurable results. Approaches based on many years of experience at top consultancies like <strong>Accenture and Deloitte</strong> as well as official training expertise for <strong>Microsoft ("App in a Day", "RPA in a Day")</strong>.',
-                'skills-title': 'Core Competencies & Technologies',
+                'skills-title': 'Kernkompetenzen & Technologien',
                 'skills-intro': 'Tailored, innovative solutions through industry expertise. The focuses are in the following areas:',
                 'contact-title': 'Let\'s talk',
                 'contact-intro': 'Ready to shape the digital future of your company? I am excited about your challenges and ideas. <br>Please contact me directly, or let us find an informal introductory appointment via my <strong>booking page</strong>.'
@@ -1018,6 +1217,18 @@
                 'service2-link': 'Solicitar consultoría de implementación <i class="fas fa-arrow-right"></i>',
                 'contact-details-title': 'Datos de contacto',
                 'view-details': 'Ver detalles',
+                'package1-details-title': 'Más detalles',
+                'package2-details-title': 'Más detalles',
+                'package3-details-title': 'Más detalles',
+                'package4-details-title': 'Más detalles',
+                'package5-details-title': 'Más detalles',
+                'package6-details-title': 'Más detalles',
+                'package1-price': 'desde 975 € única vez',
+                'package2-price': 'desde 5.800 € precio del proyecto',
+                'package3-price': '1.450 €/día',
+                'package4-price': 'desde 2.000 € / día',
+                'package5-price': 'desde 5.000 € (típicamente 7–15k)',
+                'package6-price': 'desde 1.600 € / día',
                 'service3-title': 'Entrenamiento y Talleres',
                 'service3-desc': 'Entrenamientos orientados a la práctica sobre Inteligencia Artificial, Desarrollo Ciudadano y webinars sobre nuevas tecnologías.',
                 'service3-li1': '<i class="fas fa-check"></i>Fundamentos de IA y "Vibe Coding"',
@@ -1079,11 +1290,19 @@
                 });
             }
 
-            // Option clicks
+            // Option clicks - redirect to correct language file
             options.forEach(opt => {
                 opt.addEventListener('click', (e) => {
+                    e.preventDefault();
                     const lang = opt.getAttribute('data-lang');
-                    setLanguage(lang);
+                    const langFiles = {
+                        'de': 'index.html',
+                        'en': 'index-en.html',
+                        'es': 'index-es.html'
+                    };
+                    if (langFiles[lang]) {
+                        window.location.href = langFiles[lang];
+                    }
                 });
             });
 
@@ -1092,10 +1311,14 @@
                 if (!e.target.closest('.language-dropdown')) closeMenu();
             });
 
-            // Initialize
-            const savedLang = localStorage.getItem('language') || 'de';
-            if (flagMap[savedLang] && currentFlag) currentFlag.src = flagMap[savedLang];
-            setLanguage(savedLang);
+            // Initialize - set correct flag for current page
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            let currentLang = 'de';
+            if (currentPage.includes('index-en')) currentLang = 'en';
+            else if (currentPage.includes('index-es')) currentLang = 'es';
+            
+            if (flagMap[currentLang] && currentFlag) currentFlag.src = flagMap[currentLang];
+            options.forEach(o => o.classList.toggle('selected', o.getAttribute('data-lang') === currentLang));
         })();
         const hamburgerMenu = document.getElementById('hamburger-menu');
         const navLinks = document.querySelector('.nav-links');

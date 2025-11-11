@@ -9,10 +9,10 @@
     <link rel="alternate" href="https://www.rp-intelligence.de/index-en.html" hreflang="en" />
     <link rel="alternate" href="https://www.rp-intelligence.de/es/" hreflang="es" />
 
-    <title>Professional AI Solutions & Implementation for SMEs | RP-Intelligence</title>
-    <meta name="description" content="RP-Intelligence: Your Reliable Partner for Intelligent AI Solutions. AI Consulting for SMEs – from strategy to implementation. Experience from top consulting firms like Accenture & Deloitte.">
-    <meta property="og:title" content="AI Consulting & Digital Transformation | RP-Intelligence">
-    <meta property="og:description" content="RP-Intelligence: Reliable Partner for Intelligent AI Solutions. AI Consulting for SMEs – Strategy, Implementation & Training. Experience from Accenture & Deloitte.">
+    <title>Stefan Regensburger (Regensburger-Patzak) – AI Consulting & Digital Transformation | RP-Intelligence</title>
+    <meta name="description" content="Stefan Regensburger (Regensburger-Patzak) – AI & Digital Transformation Consultant for SMEs. Strategy, Implementation & Training. Experience from Accenture & Deloitte.">
+    <meta property="og:title" content="Stefan Regensburger – AI Consulting & Digital Transformation | RP-Intelligence">
+    <meta property="og:description" content="Stefan Regensburger (Regensburger-Patzak) – AI Strategy, Implementation & Training for SMEs. Accenture & Deloitte experience.">
     <meta property="og:image" content="images/DEIN-OG-BILD.png"> <!-- BITTE ANPASSEN (Dateiname ggf. anpassen) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.rp-intelligence.de"> <!-- BITTE ANPASSEN -->
@@ -204,6 +204,30 @@
         .skills-tags span { background-color: var(--neutral-gray-medium); color: var(--text-color); padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; border: 1px solid var(--border-color); display: inline-block; margin: 3px; transition: background-color 0.3s ease, color 0.3s ease; }
         .skills-tags span:hover { background-color: var(--primary-color); color: var(--text-light); border-color: var(--primary-color); }
 
+        /* Packages Section - Modern Cards */
+        #packages { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); }
+        .packages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; margin-top: 40px; }
+        .package-card { background: var(--background-color); border-radius: 12px; padding: 35px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; border: 2px solid transparent; position: relative; overflow: hidden; }
+        .package-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary-color), var(--accent-yellow)); }
+        .package-card:hover { transform: translateY(-8px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); border-color: var(--primary-color); }
+        .package-number { position: absolute; top: 20px; right: 25px; font-size: 3rem; font-weight: 800; color: rgba(0, 120, 212, 0.08); font-family: var(--font-primary); line-height: 1; }
+        .package-card h3 { font-size: 1.4rem; color: var(--secondary-color); margin-bottom: 12px; font-weight: 700; position: relative; z-index: 1; }
+        .package-card .package-subtitle { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5; }
+        .package-card .package-price { display: inline-block; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--text-light); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 1rem; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,120,212,0.2); }
+        .package-card .package-outcome { font-size: 0.9rem; color: var(--text-color); margin-bottom: 18px; padding: 12px; background: var(--neutral-gray-light); border-left: 3px solid var(--accent-yellow); border-radius: 4px; font-weight: 500; }
+        .package-card details { margin-top: 15px; }
+        .package-card summary { cursor: pointer; font-weight: 600; color: var(--primary-color); padding: 10px 0; font-size: 0.95rem; display: flex; align-items: center; user-select: none; }
+        .package-card summary::before { content: '+'; display: inline-block; width: 20px; height: 20px; line-height: 18px; text-align: center; border-radius: 50%; background: var(--primary-color); color: white; margin-right: 10px; font-size: 1.2rem; transition: transform 0.3s ease; }
+        .package-card details[open] summary::before { content: '−'; transform: rotate(180deg); }
+        .package-card summary:hover { color: var(--accent-yellow); }
+        .package-card details ul, .package-card details ol { margin: 15px 0 0 20px; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; }
+        .package-card details li { margin-bottom: 8px; padding-left: 5px; }
+        .package-card details p { margin-top: 12px; font-size: 0.9rem; color: var(--text-color); font-weight: 500; }
+        @media (max-width: 768px) {
+            .packages-grid { grid-template-columns: 1fr; }
+            .package-number { font-size: 2.5rem; }
+        }
+
         .contact-section { background-color: var(--secondary-color); color: var(--text-light); }
         .contact-section .section-title { color: var(--text-light); }
         .contact-section .section-title::after { background-color: var(--accent-yellow); }
@@ -267,12 +291,16 @@
       "name": "RP-Intelligence",
       "description": "RP-Intelligence: Reliable Partner for Intelligent AI Solutions. AI Consulting for SMEs – End-to-end from strategy to implementation. Experience from top consulting firms.",
       "url": "https://www.rp-intelligence.de",
-      "founder": {
-        "@type": "Person",
-        "name": "Stefan Regensburger-Patzak",
-        "jobTitle": "Founder/CEO - AI Director & Architect",
-        "sameAs": "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
-      },
+            "founder": {
+                "@type": "Person",
+                "name": "Stefan Regensburger-Patzak",
+                "alternateName": ["Stefan Regensburger", "Stefan Regensburger Patzak"],
+                "jobTitle": "Founder/CEO - AI Director & Architect",
+                "url": "https://www.rp-intelligence.de/index-en.html",
+                "image": "https://www.rp-intelligence.de/images/profile-pic.jpg",
+                "sameAs": ["https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"],
+                "knowsLanguage": ["en", "de", "es"]
+            },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Munich",
@@ -296,16 +324,20 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Stefan Regensburger-Patzak",
+            "@type": "Person",
+            "name": "Stefan Regensburger-Patzak",
+            "alternateName": ["Stefan Regensburger", "Stefan Regensburger Patzak"],
       "jobTitle": "AI Director & Architect",
       "worksFor": {
         "@type": "Organization",
         "name": "RP-Intelligence",
         "url": "https://www.rp-intelligence.de"
       },
-      "sameAs": "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/",
-      "knowsAbout": ["Artificial Intelligence", "AI Consulting", "Digital Transformation", "Power Platform", "RPA"]
+            "url": "https://www.rp-intelligence.de/index-en.html",
+            "image": "https://www.rp-intelligence.de/images/profile-pic.jpg",
+            "sameAs": ["https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"],
+            "knowsAbout": ["Artificial Intelligence", "AI Consulting", "Digital Transformation", "Power Platform", "RPA"],
+            "knowsLanguage": ["en", "de", "es"]
     }
     
     </script>
@@ -323,6 +355,7 @@
                 <li><a href="#arbeitsweise" data-key="nav-approach">Approach</a></li>
                 <li><a href="#references" data-key="nav-references">References</a></li>
                 <li><a href="#skills" data-key="nav-skills">Skills</a></li>
+                <li><a href="#packages" data-key="nav-packages">Packages</a></li>
                 <li><a href="#contact" data-key="nav-contact">Contact</a></li>
             </ul>
             <!-- single hamburger button for responsive menu -->
@@ -349,7 +382,9 @@
             <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-95" style="color: #ffffff;" data-key="hero-description">
             We offer professional IT consulting, implementation, and operations, shaping the future with innovative solutions for your successful digital transformation. Discover how we turn your challenges into opportunities as <br><strong>"Reliable Partner for intelligent AI-Solutions"</strong></br>
           </p>
-            <a href="#contact" class="btn btn-accent animate-on-scroll" data-key="hero-cta"><i class="fas fa-comments"></i> Let's talk</a>
+                        <div>
+                                <a href="#contact" class="btn btn-accent animate-on-scroll" data-key="hero-cta"><i class="fas fa-comments"></i> Let's talk</a>
+                        </div>
         </div>
     </section>
 
@@ -804,6 +839,141 @@
         </div>
     </section>
 
+    <section id="packages" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-key="packages-title">Packages</h2>
+    <section id="packages" class="content-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-key="packages-title">Our Packages</h2>
+            <p class="text-center animate-on-scroll" style="max-width: 800px; margin: 0 auto 30px; color: var(--text-muted); font-size: 1.05rem;" data-key="packages-intro">
+                Ready-made solution packages for quick success – from AI integration to strategic consulting. Prices are plus VAT.
+            </p>
+            <div class="packages-grid">
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">01</span>
+                    <h3 data-key="package1-title">AI Telephone Solutions</h3>
+                    <p class="package-subtitle" data-key="package1-subtitle">Calendar access, automated calls, integration with CRM or ticketing systems.</p>
+                    <span class="package-price" data-key="package1-price">from 975 € one-time</span>
+                    <div class="package-outcome" data-key="package1-outcome">
+                        <strong>Outcome:</strong> Less manual scheduling, faster lead response, natural voice dialogs.
+                    </div>
+                    <details>
+                        <summary data-key="package1-details-title">More details</summary>
+                        <ul data-key="package1-details">
+                            <li>Initial setup & configuration (approx. 1 day)</li>
+                            <li>Dialog flow & intent design</li>
+                            <li>Integration (calendar / CRM / ticketing)</li>
+                            <li>Test calls & fine-tuning</li>
+                            <li>Optional: KPI dashboard (add-on)</li>
+                        </ul>
+                        <p><strong>Result:</strong> Noticeable relief in initial contact & scheduling process.</p>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">02</span>
+                    <h3 data-key="package2-title">Custom GPT Solution</h3>
+                    <p class="package-subtitle" data-key="package2-subtitle">GDPR-compliant GPT based on your documents; chatbot/portal on-prem or EU cloud.</p>
+                    <span class="package-price" data-key="package2-price">from 6,000 €</span>
+                    <div class="package-outcome" data-key="package2-outcome">
+                        <strong>Outcome:</strong> Response times to document questions from weeks to minutes.
+                    </div>
+                    <details>
+                        <summary data-key="package2-details-title">More details</summary>
+                        <ul data-key="package2-details">
+                            <li>Document ingestion & vectorization</li>
+                            <li>Semantic search & context retrieval</li>
+                            <li>Role/permission layer</li>
+                            <li>Feedback loop / quality metrics</li>
+                            <li>Optional: on-prem hosting / EU cloud isolation</li>
+                        </ul>
+                        <p><strong>Price ranges:</strong> Basic (6–8k), Standard (10–14k), Premium (15k+ depending on scope).</p>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">03</span>
+                    <h3 data-key="package3-title">Vibe Coding Training (1 Day)</h3>
+                    <p class="package-subtitle" data-key="package3-subtitle">Intensive workshop for teams (no programming knowledge required!): hands-on software development with AI.</p>
+                    <span class="package-price" data-key="package3-price">1,450 €/day</span>
+                    <div class="package-outcome" data-key="package3-outcome">
+                        <strong>Outcome:</strong> Democratization of AI - team can evaluate and implement their own AI/automation ideas.
+                    </div>
+                    <details>
+                        <summary data-key="package3-details-title">More details</summary>
+                        <ol data-key="package3-details">
+                            <li>Intro & potential fields (frontend/backend/data science & more)</li>
+                            <li>Prompt patterns & AI assistance</li>
+                            <li>Rapid prototyping</li>
+                            <li>Integration, security, deployments & automation</li>
+                            <li>Team challenge & conclusion</li>
+                        </ol>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">04</span>
+                    <h3 data-key="package4-title">AI Strategy / Design Thinking Workshop</h3>
+                    <p class="package-subtitle" data-key="package4-subtitle">Use case identification, prioritization, business value & roadmap.</p>
+                    <span class="package-price" data-key="package4-price">2,000 €/day</span>
+                    <div class="package-outcome" data-key="package4-outcome">
+                        <strong>Outcome:</strong> Prioritized AI roadmap with quick wins and strategic initiatives.
+                    </div>
+                    <details>
+                        <summary data-key="package4-details-title">More details</summary>
+                        <ul data-key="package4-details">
+                            <li>Discovery: business goals, pain points, data situation</li>
+                            <li>Ideation: use case funnel, impact vs. effort</li>
+                            <li>Prioritization: quick wins vs. strategic bets</li>
+                            <li>Roadmap & governance approaches</li>
+                            <li>Documented results deck</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">05</span>
+                    <h3 data-key="package5-title">AI Technical Due Diligence</h3>
+                    <p class="package-subtitle" data-key="package5-subtitle">Technical assessment: architecture, data quality, GDPR, scalability.</p>
+                    <span class="package-price" data-key="package5-price">from 5,000 €</span>
+                    <div class="package-outcome" data-key="package5-outcome">
+                        <strong>Outcome:</strong> Executive summary + detailed assessment (PDF/deck) with risk analysis.
+                    </div>
+                    <details>
+                        <summary data-key="package5-details-title">More details</summary>
+                        <ul data-key="package5-details">
+                            <li>Architecture & components (services, pipelines, models)</li>
+                            <li>Data quality, access, classification & governance</li>
+                            <li>Security & compliance (GDPR, least privilege, logging)</li>
+                            <li>Scalability & cost model</li>
+                            <li>Risk & maturity matrix + recommendations</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">06</span>
+                    <h3 data-key="package6-title">Gemba Walk</h3>
+                    <p class="package-subtitle" data-key="package6-subtitle">On-site analysis of daily routines (up to 8 hours) + follow-up workshop and roadmap.</p>
+                    <span class="package-price" data-key="package6-price">1,600 €/day</span>
+                    <div class="package-outcome" data-key="package6-outcome">
+                        <strong>Outcome:</strong> Identified use cases & discovery of digitalization potentials.
+                    </div>
+                    <details>
+                        <summary data-key="package6-details-title">More details</summary>
+                        <ul data-key="package6-details">
+                            <li>Preparation call (30–45 min) for goal clarification</li>
+                            <li>On-site inspection (up to 8h) with interviews</li>
+                            <li>Identification of use cases & digitalization potentials</li>
+                            <li>Follow-up meeting (remote) for action discussion</li>
+                            <li>Roadmap & next steps</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="content-section contact-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll" data-key="contact-title">Let's talk</h2>
@@ -890,11 +1060,24 @@
                 'service2-link': 'Request implementation consulting <i class="fas fa-arrow-right"></i>'
                 ,
                 'contact-details-title': 'Contact Details',
-                'view-details': 'View details'
+                'view-details': 'View details',
+                'package1-details-title': 'Weitere Details',
+                'package2-details-title': 'Weitere Details',
+                'package3-details-title': 'Weitere Details',
+                'package4-details-title': 'Weitere Details',
+                'package5-details-title': 'Weitere Details',
+                'package6-details-title': 'Weitere Details',
+                'package1-price': 'ab 975 € einmalig',
+                'package2-price': 'ab 5.800 € Projektpreis',
+                'package3-price': 'ab 1.450 €/Tag',
+                'package4-price': 'ab 2.000 € / Tag',
+                'package5-price': 'ab 5.000 € (typisch 7–15k)',
+                'package6-price': 'ab 1.600 € / Tag'
             },
             en: {
                 'nav-founder': 'Founder',
                 'nav-services': 'Services',
+                'nav-packages': 'Packages',
                 'nav-approach': 'Approach',
                 'nav-references': 'References',
                 'nav-skills': 'Skills',
@@ -963,7 +1146,45 @@
                 'skills-title': 'Core Competencies & Technologies',
                 'skills-intro': 'Tailored, innovative solutions through industry Expertise. The focuses are in the following areas:',
                 'contact-title': 'Let\'s talk',
-                'contact-intro': 'Ready to shape the digital future of your company? I am excited about your challenges and ideas. <br>Please contact me directly, or let us find an informal introductory appointment via my <strong>booking page</strong>.'
+                'contact-intro': 'Ready to shape the digital future of your company? I am excited about your challenges and ideas. <br>Please contact me directly, or let us find an informal introductory appointment via my <strong>booking page</strong>.',
+                'packages-title': 'Packages',
+                'packages-subtitle': 'Discover our tailored packages for your digital transformation. Each package is designed to deliver measurable results and optimize your processes.',
+                'package1-title': 'AI Telephony',
+                'package1-subtitle': 'Intelligent voice assistants for customer service',
+                'package1-price': 'from 5,000 €',
+                'package1-outcome': 'Reduce customer inquiries by up to 40% through automated conversation control and intelligent routing.',
+                'package1-details-btn': 'Show details',
+                'package1-details': '<ul><li>Integration of AI-powered voice assistants into existing telephony systems</li><li>Automatic conversation analysis and sentiment recognition</li><li>Intelligent routing based on inquiry content</li><li>24/7 availability without personnel commitment</li><li>Reduction of waiting times and improvement of customer satisfaction</li></ul>',
+                'package2-title': 'Custom GPT',
+                'package2-subtitle': 'Customized AI models for specific use cases',
+                'package2-price': 'from 5,800 €',
+                'package2-outcome': 'Develop individual AI solutions that are perfectly tailored to your business processes.',
+                'package2-details-btn': 'Show details',
+                'package2-details': '<ul><li>Development of customized GPT models based on Azure OpenAI</li><li>Integration of company-specific data and knowledge bases</li><li>Fine-tuning for industry-specific requirements</li><li>Secure data processing with GDPR compliance</li><li>Scalable solutions for various use cases</li></ul>',
+                'package3-title': 'Vibe Training',
+                'package3-subtitle': 'Intensive training for AI and low-code development',
+                'package3-price': 'from 3,000 €',
+                'package3-outcome': 'Empower your team to develop and implement AI solutions themselves.',
+                'package3-details-btn': 'Show details',
+                'package3-details': '<ul><li>Intensive 2-day training in AI basics and low-code</li><li>Practical exercises with Microsoft Power Platform</li><li>Development of first prototypes during training</li><li>Certified trainers with Accenture/Deloitte experience</li><li>Follow-up support for 3 months after training</li></ul>',
+                'package4-title': 'AI Strategy',
+                'package4-subtitle': 'Strategic consulting for AI implementation',
+                'package4-price': 'from 2,000 €/day',
+                'package4-outcome': 'Develop a future-proof AI strategy for sustainable business success.',
+                'package4-details-btn': 'Show details',
+                'package4-details': '<ul><li>Comprehensive analysis of your company\'s current AI maturity</li><li>Development of a customized AI strategy</li><li>Roadmap for implementation and scaling</li><li>Change management and employee empowerment</li><li>Regular reviews and adjustments of the strategy</li></ul>',
+                'package5-title': 'Due Diligence',
+                'package5-subtitle': 'Technical due diligence for company transactions',
+                'package5-price': 'from 5,000 €',
+                'package5-outcome': 'Assess the technical infrastructure and AI readiness of potential acquisition targets.',
+                'package5-details-btn': 'Show details',
+                'package5-details': '<ul><li>Comprehensive analysis of IT infrastructure and system landscape</li><li>Assessment of AI maturity and digitization potentials</li><li>Risk analysis for technical integration</li><li>Recommendations for post-merger integration</li><li>Detailed report with action recommendations</li></ul>',
+                'package6-title': 'Gemba Walk',
+                'package6-subtitle': 'On-site analysis and process optimization',
+                'package6-price': 'from 1,600 €/day',
+                'package6-outcome': 'Experience your processes up close and identify optimization potentials directly on site.',
+                'package6-details-btn': 'Show details',
+                'package6-details': '<ul><li>On-site visits and direct observation of processes</li><li>Interviews with employees at all levels</li><li>Identification of waste and inefficiencies</li><li>Development of concrete improvement proposals</li><li>Implementation plan with measurable KPIs</li></ul>'
             },
             es: {
                 'nav-founder': 'Fundador',
@@ -1018,6 +1239,18 @@
                 'service2-link': 'Solicitar consultoría de implementación <i class="fas fa-arrow-right"></i>',
                 'contact-details-title': 'Datos de contacto',
                 'view-details': 'Ver detalles',
+                'package1-details-title': 'Más detalles',
+                'package2-details-title': 'Más detalles',
+                'package3-details-title': 'Más detalles',
+                'package4-details-title': 'Más detalles',
+                'package5-details-title': 'Más detalles',
+                'package6-details-title': 'Más detalles',
+                'package1-price': 'desde 975 € única vez',
+                'package2-price': 'desde 5.800 €',
+                'package3-price': 'desde 1.450 €/día',
+                'package4-price': 'desde 2.000 €/día',
+                'package5-price': 'desde 5.000 €',
+                'package6-price': 'desde 1.600 €/día',
                 'service3-title': 'Entrenamiento y Talleres',
                 'service3-desc': 'Entrenamientos orientados a la práctica sobre Inteligencia Artificial, Desarrollo Ciudadano y webinars sobre nuevas tecnologías.',
                 'service3-li1': '<i class="fas fa-check"></i>Fundamentos de IA y "Vibe Coding"',
@@ -1079,11 +1312,19 @@
                 });
             }
 
-            // Option clicks
+            // Option clicks - redirect to correct language file
             options.forEach(opt => {
                 opt.addEventListener('click', (e) => {
+                    e.preventDefault();
                     const lang = opt.getAttribute('data-lang');
-                    setLanguage(lang);
+                    const langFiles = {
+                        'de': 'index.html',
+                        'en': 'index-en.html',
+                        'es': 'index-es.html'
+                    };
+                    if (langFiles[lang]) {
+                        window.location.href = langFiles[lang];
+                    }
                 });
             });
 
@@ -1092,10 +1333,14 @@
                 if (!e.target.closest('.language-dropdown')) closeMenu();
             });
 
-            // Initialize
-        const savedLang = localStorage.getItem('language') || 'en';
-            if (flagMap[savedLang] && currentFlag) currentFlag.src = flagMap[savedLang];
-            setLanguage(savedLang);
+            // Initialize - set correct flag for current page
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            let currentLang = 'de';
+            if (currentPage.includes('index-en')) currentLang = 'en';
+            else if (currentPage.includes('index-es')) currentLang = 'es';
+            
+            if (flagMap[currentLang] && currentFlag) currentFlag.src = flagMap[currentLang];
+            options.forEach(o => o.classList.toggle('selected', o.getAttribute('data-lang') === currentLang));
         })();
         const hamburgerMenu = document.getElementById('hamburger-menu');
         const navLinks = document.querySelector('.nav-links');
@@ -1182,6 +1427,17 @@
                 if (detailsContent) {
                     detailsContent.classList.toggle('expanded');
                     this.classList.toggle('open'); // Für den Button selbst (Pfeil-Rotation)
+                }
+            });
+        });
+
+        const packageDetailsButtons = document.querySelectorAll('.package-details-btn');
+        packageDetailsButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                if (details) {
+                    details.classList.toggle('expanded');
+                    this.textContent = details.classList.contains('expanded') ? 'Hide details' : 'Show details';
                 }
             });
         });

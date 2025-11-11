@@ -9,10 +9,10 @@
     <link rel="alternate" href="https://www.rp-intelligence.de/en/" hreflang="en" />
     <link rel="alternate" href="https://www.rp-intelligence.de/index-es.html" hreflang="es" />
 
-    <title>Soluciones de IA Profesionales e Implementación para PYMEs | RP-Intelligence</title>
-    <meta name="description" content="RP-Intelligence: Su Socio Confiable para Soluciones de IA Inteligentes. Consultoría de IA para PYMEs – desde estrategia hasta implementación. Experiencia de consultorías líderes como Accenture y Deloitte.">
-    <meta property="og:title" content="Consultoría de IA y Transformación Digital | RP-Intelligence">
-    <meta property="og:description" content="RP-Intelligence: Socio Confiable para Soluciones de IA Inteligentes. Consultoría de IA para PYMEs – Estrategia, Implementación y Capacitación. Experiencia de Accenture y Deloitte.">
+    <title>Stefan Regensburger (Regensburger-Patzak) – Consultoría de IA & Transformación Digital | RP-Intelligence</title>
+    <meta name="description" content="Stefan Regensburger (Regensburger-Patzak): Consultoría de IA y Transformación Digital para PYMEs – Estrategia, Implementación y Capacitación. Experiencia Accenture & Deloitte.">
+    <meta property="og:title" content="Stefan Regensburger – Consultoría de IA & Transformación Digital | RP-Intelligence">
+    <meta property="og:description" content="Stefan Regensburger (Regensburger-Patzak): Estrategia, Implementación y Capacitación en IA y Automatización para PYMEs.">
     <meta property="og:image" content="images/DEIN-OG-BILD.png"> <!-- BITTE ANPASSEN (Dateiname ggf. anpassen) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.rp-intelligence.de"> <!-- BITTE ANPASSEN -->
@@ -204,6 +204,30 @@
         .skills-tags span { background-color: var(--neutral-gray-medium); color: var(--text-color); padding: 5px 12px; border-radius: 15px; font-size: 0.85rem; border: 1px solid var(--border-color); display: inline-block; margin: 3px; transition: background-color 0.3s ease, color 0.3s ease; }
         .skills-tags span:hover { background-color: var(--primary-color); color: var(--text-light); border-color: var(--primary-color); }
 
+        /* Packages Section - Modern Cards */
+        #packages { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); }
+        .packages-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; margin-top: 40px; }
+        .package-card { background: var(--background-color); border-radius: 12px; padding: 35px 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; border: 2px solid transparent; position: relative; overflow: hidden; }
+        .package-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: linear-gradient(90deg, var(--primary-color), var(--accent-yellow)); }
+        .package-card:hover { transform: translateY(-8px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); border-color: var(--primary-color); }
+        .package-number { position: absolute; top: 20px; right: 25px; font-size: 3rem; font-weight: 800; color: rgba(0, 120, 212, 0.08); font-family: var(--font-primary); line-height: 1; }
+        .package-card h3 { font-size: 1.4rem; color: var(--secondary-color); margin-bottom: 12px; font-weight: 700; position: relative; z-index: 1; }
+        .package-card .package-subtitle { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5; }
+        .package-card .package-price { display: inline-block; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--text-light); padding: 8px 18px; border-radius: 20px; font-weight: 700; font-size: 1rem; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,120,212,0.2); }
+        .package-card .package-outcome { font-size: 0.9rem; color: var(--text-color); margin-bottom: 18px; padding: 12px; background: var(--neutral-gray-light); border-left: 3px solid var(--accent-yellow); border-radius: 4px; font-weight: 500; }
+        .package-card details { margin-top: 15px; }
+        .package-card summary { cursor: pointer; font-weight: 600; color: var(--primary-color); padding: 10px 0; font-size: 0.95rem; display: flex; align-items: center; user-select: none; }
+        .package-card summary::before { content: '+'; display: inline-block; width: 20px; height: 20px; line-height: 18px; text-align: center; border-radius: 50%; background: var(--primary-color); color: white; margin-right: 10px; font-size: 1.2rem; transition: transform 0.3s ease; }
+        .package-card details[open] summary::before { content: '−'; transform: rotate(180deg); }
+        .package-card summary:hover { color: var(--accent-yellow); }
+        .package-card details ul, .package-card details ol { margin: 15px 0 0 20px; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8; }
+        .package-card details li { margin-bottom: 8px; padding-left: 5px; }
+        .package-card details p { margin-top: 12px; font-size: 0.9rem; color: var(--text-color); font-weight: 500; }
+        @media (max-width: 768px) {
+            .packages-grid { grid-template-columns: 1fr; }
+            .package-number { font-size: 2.5rem; }
+        }
+
         .contact-section { background-color: var(--secondary-color); color: var(--text-light); }
         .contact-section .section-title { color: var(--text-light); }
         .contact-section .section-title::after { background-color: var(--accent-yellow); }
@@ -267,12 +291,16 @@
       "name": "RP-Intelligence",
       "description": "RP-Intelligence: Socio Confiable para Soluciones de IA Inteligentes. Consultoría de IA para PYMEs – De principio a fin, desde estrategia hasta implementación. Experiencia de firmas de consultoría líderes.",
       "url": "https://www.rp-intelligence.de",
-      "founder": {
-        "@type": "Person",
-        "name": "Stefan Regensburger-Patzak",
-        "jobTitle": "Fundador/CEO - Director y Arquitecto de IA",
-        "sameAs": "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"
-      },
+            "founder": {
+                "@type": "Person",
+                "name": "Stefan Regensburger-Patzak",
+                "alternateName": ["Stefan Regensburger", "Stefan Regensburger Patzak"],
+                "jobTitle": "Fundador/CEO - Director y Arquitecto de IA",
+                "url": "https://www.rp-intelligence.de/index-es.html",
+                "image": "https://www.rp-intelligence.de/images/profile-pic.jpg",
+                "sameAs": ["https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"],
+                "knowsLanguage": ["es", "de", "en"]
+            },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Múnich",
@@ -296,16 +324,20 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Stefan Regensburger-Patzak",
+            "@type": "Person",
+            "name": "Stefan Regensburger-Patzak",
+            "alternateName": ["Stefan Regensburger", "Stefan Regensburger Patzak"],
       "jobTitle": "Director y Arquitecto de IA",
       "worksFor": {
         "@type": "Organization",
         "name": "RP-Intelligence",
         "url": "https://www.rp-intelligence.de"
       },
-      "sameAs": "https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/",
-      "knowsAbout": ["Inteligencia Artificial", "Consultoría de IA", "Transformación Digital", "Power Platform", "RPA"]
+            "url": "https://www.rp-intelligence.de/index-es.html",
+            "image": "https://www.rp-intelligence.de/images/profile-pic.jpg",
+            "sameAs": ["https://www.linkedin.com/in/stefan-regensburger-patzak-933bab110/"],
+            "knowsAbout": ["Inteligencia Artificial", "Consultoría de IA", "Transformación Digital", "Power Platform", "RPA"],
+            "knowsLanguage": ["es", "de", "en"]
     }
     
     </script>
@@ -323,6 +355,7 @@
                 <li><a href="#arbeitsweise" data-key="nav-approach">Enfoque</a></li>
                 <li><a href="#references" data-key="nav-references">Referencias</a></li>
                 <li><a href="#skills" data-key="nav-skills">Habilidades</a></li>
+                <li><a href="#packages" data-key="nav-packages">Paquetes</a></li>
                 <li><a href="#contact" data-key="nav-contact">Contacto</a></li>
             </ul>
             <!-- single hamburger button for responsive menu -->
@@ -349,7 +382,9 @@
             <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 opacity-95" style="color: #ffffff;" data-key="hero-description">
             Ofrecemos consultoría de TI profesional, implementación y operaciones, dando forma al futuro con soluciones innovadoras para su exitosa transformación digital. Descubra cómo convertimos sus desafíos en oportunidades como <br><strong>"Reliable Partner for intelligent AI-Solutions"</strong></br>
           </p>
-            <a href="#contact" class="btn btn-accent animate-on-scroll" data-key="hero-cta"><i class="fas fa-comments"></i> Hablemos</a>
+                        <div>
+                                <a href="#contact" class="btn btn-accent animate-on-scroll" data-key="hero-cta"><i class="fas fa-comments"></i> Hablemos</a>
+                        </div>
         </div>
     </section>
 
@@ -804,6 +839,136 @@
         </div>
     </section>
 
+    <section id="packages" class="content-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll" data-key="packages-title">Nuestros Paquetes</h2>
+            <p class="text-center animate-on-scroll" style="max-width: 800px; margin: 0 auto 30px; color: var(--text-muted); font-size: 1.05rem;" data-key="packages-intro">
+                Paquetes de soluciones listas para resultados rápidos – de integración de IA hasta consultoría estratégica. Los precios no incluyen IVA.
+            </p>
+            <div class="packages-grid">
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">01</span>
+                    <h3 data-key="package1-title">Soluciones de Telefonía IA</h3>
+                    <p class="package-subtitle" data-key="package1-subtitle">Acceso a calendario, llamadas automatizadas, integración con CRM / sistemas de tickets.</p>
+                    <span class="package-price" data-key="package1-price">desde 975 € pago único</span>
+                    <div class="package-outcome" data-key="package1-outcome">
+                        <strong>Resultado:</strong> Menos terminación manual, reacción más rápida a leads, diálogos de voz naturales.
+                    </div>
+                    <details>
+                        <summary data-key="package1-details-title">Más detalles</summary>
+                        <ul data-key="package1-details">
+                            <li>Configuración inicial y configuración (aprox. 1 día)</li>
+                            <li>Diseño de flujo de diálogo e intención</li>
+                            <li>Integración (calendario / CRM / tickets)</li>
+                            <li>Llamadas de prueba y ajuste fino</li>
+                            <li>Opcional: Panel KPI (complemento)</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">02</span>
+                    <h3 data-key="package2-title">Solución GPT Personalizada</h3>
+                    <p class="package-subtitle" data-key="package2-subtitle">GPT compatible con RGPD basado en sus documentos; chatbot/portal on-prem o nube europea.</p>
+                    <span class="package-price" data-key="package2-price">desde 6.000 €</span>
+                    <div class="package-outcome" data-key="package2-outcome">
+                        <strong>Resultado:</strong> Tiempos de respuesta a preguntas sobre documentos de semanas a minutos.
+                    </div>
+                    <details>
+                        <summary data-key="package2-details-title">Más detalles</summary>
+                        <ul data-key="package2-details">
+                            <li>Ingestión y vectorización de documentos</li>
+                            <li>Búsqueda semántica y recuperación de contexto</li>
+                            <li>Capa de rol/permiso</li>
+                            <li>Bucle de retroalimentación/métricas de calidad</li>
+                            <li>Opcional: Hosting on-prem/nube europea aislada</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">03</span>
+                    <h3 data-key="package3-title">Entrenamiento Vibe Coding (1 Día)</h3>
+                    <p class="package-subtitle" data-key="package3-subtitle">Taller intensivo para equipos (¡No se requiere conocimiento de programación!): desarrollo de software práctico con IA.</p>
+                    <span class="package-price" data-key="package3-price">1.450 €/día</span>
+                    <div class="package-outcome" data-key="package3-outcome">
+                        <strong>Resultado:</strong> Democratización de IA - el equipo puede evaluar e implementar sus propias ideas de IA/automatización.
+                    </div>
+                    <details>
+                        <summary data-key="package3-details-title">Más detalles</summary>
+                        <ul data-key="package3-details">
+                            <li>Introducción y campos de potencial</li>
+                            <li>Patrones de prompts y asistencia de IA</li>
+                            <li>Prototipado rápido de Low-Code</li>
+                            <li>Integración y automatización</li>
+                            <li>Desafío de equipo y cierre</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">04</span>
+                    <h3 data-key="package4-title">Taller de Estrategia IA / Design Thinking</h3>
+                    <p class="package-subtitle" data-key="package4-subtitle">Identificación de casos de uso, priorización, valor comercial y hoja de ruta.</p>
+                    <span class="package-price" data-key="package4-price">2.000 €/día</span>
+                    <div class="package-outcome" data-key="package4-outcome">
+                        <strong>Resultado:</strong> Hoja de ruta de IA priorizada con wins rápidos e iniciativas estratégicas.
+                    </div>
+                    <details>
+                        <summary data-key="package4-details-title">Más detalles</summary>
+                        <ul data-key="package4-details">
+                            <li>Descubrimiento: Objetivos comerciales, puntos de dolor, situación de datos</li>
+                            <li>Ideación: Embudo de casos de uso, impacto vs. esfuerzo</li>
+                            <li>Priorización: Wins rápidos vs. apuestas estratégicas</li>
+                            <li>Hoja de ruta y enfoques de gobernanza</li>
+                            <li>Deck de resultados documentado</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">05</span>
+                    <h3 data-key="package5-title">Due Diligence Técnica de IA</h3>
+                    <p class="package-subtitle" data-key="package5-subtitle">Evaluación técnica: Arquitectura, calidad de datos, RGPD, escalabilidad.</p>
+                    <span class="package-price" data-key="package5-price">desde 5.000 €</span>
+                    <div class="package-outcome" data-key="package5-outcome">
+                        <strong>Resultado:</strong> Resumen ejecutivo + evaluación detallada (PDF/deck) con análisis de riesgos.
+                    </div>
+                    <details>
+                        <summary data-key="package5-details-title">Más detalles</summary>
+                        <ul data-key="package5-details">
+                            <li>Arquitectura y componentes (servicios, pipelines, modelos)</li>
+                            <li>Calidad de datos, acceso, clasificación y gobernanza</li>
+                            <li>Seguridad y cumplimiento (RGPD, Least Privilege, logging)</li>
+                            <li>Escalabilidad y modelo de costos</li>
+                            <li>Matriz de riesgos y madurez + recomendaciones</li>
+                        </ul>
+                    </details>
+                </div>
+
+                <div class="package-card animate-on-scroll">
+                    <span class="package-number">06</span>
+                    <h3 data-key="package6-title">Gemba Walk</h3>
+                    <p class="package-subtitle" data-key="package6-subtitle">Análisis in situ de rutinas diarias (hasta 8 horas).</p>
+                    <span class="package-price" data-key="package6-price">1.600 €/día</span>
+                    <div class="package-outcome" data-key="package6-outcome">
+                        <strong>Resultado:</strong> Casos de uso identificados y descubrimiento de potenciales de digitalización.
+                    </div>
+                    <details>
+                        <summary data-key="package6-details-title">Más detalles</summary>
+                        <ul data-key="package6-details">
+                            <li>Llamada de preparación (30–45 min) para aclarar objetivos</li>
+                            <li>Recorrido in situ (hasta 8h) con entrevistas</li>
+                            <li>Identificación de wins rápidos y palancas estructurales</li>
+                            <li>Taller de seguimiento (remoto) para priorización de medidas</li>
+                            <li>Hoja de ruta y próximos pasos (documentación)</li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="content-section contact-section">
         <div class="container">
             <h2 class="section-title animate-on-scroll" data-key="contact-title">Hablemos</h2>
@@ -890,7 +1055,19 @@
                 'service2-link': 'Solicitar consultorÃ­a de implementaciÃ³n <i class="fas fa-arrow-right"></i>'
                 ,
                 'contact-details-title': 'Datos de Contacto',
-                'view-details': 'Ver detalles'
+                'view-details': 'Ver detalles',
+                'package1-details-title': 'Weitere Details',
+                'package2-details-title': 'Weitere Details',
+                'package3-details-title': 'Weitere Details',
+                'package4-details-title': 'Weitere Details',
+                'package5-details-title': 'Weitere Details',
+                'package6-details-title': 'Weitere Details',
+                'package1-price': 'ab 975 € einmalig',
+                'package2-price': 'ab 5.800 € Projektpreis',
+                'package3-price': '1.450 €/Tag',
+                'package4-price': 'ab 2.000 €/Tag',
+                'package5-price': 'ab 5.000 €',
+                'package6-price': 'ab 1.600 €/Tag'
             },
             en: {
                 'nav-founder': 'Founder',
@@ -968,6 +1145,7 @@
             es: {
                 'nav-founder': 'Fundador',
                 'nav-services': 'Servicios',
+                'nav-packages': 'Paquetes',
                 'nav-approach': 'Enfoque',
                 'nav-references': 'Referencias',
                 'nav-skills': 'Habilidades',
@@ -1035,6 +1213,44 @@
                 'references-intro': 'Transformaciones de empresas a través de soluciones tecnológicas innovadoras para resultados medibles. Enfoques basados en muchos años de experiencia en consultorías de primer nivel como <strong>Accenture y Deloitte</strong> así como experiencia oficial de capacitación para <strong>Microsoft ("App in a Day", "RPA in a Day")</strong>.',
                 'skills-title': 'Competencias Centrales y Tecnologías',
                 'skills-intro': 'Soluciones innovadoras a medida a través de experiencia en la industria. Los focos están en las siguientes áreas:',
+                'packages-title': 'Nuestros Paquetes',
+                'packages-intro': 'Paquetes de soluciones listas para resultados rápidos – de integración de IA hasta consultoría estratégica. Los precios no incluyen IVA.',
+                'package1-title': 'Soluciones de Telefonía IA',
+                'package1-subtitle': 'Acceso a calendario, llamadas automatizadas, integración con CRM y sistemas de tickets.',
+                'package1-price': 'desde 975 € una vez',
+                'package1-outcome': '<strong>Resultado:</strong> Menos terminación manual, reacción más rápida a leads, diálogos de voz naturales.',
+                'package1-details-title': 'Más detalles',
+                'package1-details': '<li>Configuración inicial y configuración (aprox. 1 día)</li><li>Diseño de flujo de diálogo e intención</li><li>Integración (calendario / CRM / tickets)</li><li>Llamadas de prueba y ajuste fino</li><li>Opcional: Panel KPI (complemento)</li>',
+                'package2-title': 'Solución GPT Personalizada',
+                'package2-subtitle': 'GPT compatible con DSGVO basado en sus documentos; chatbot/portal on-prem o nube europea.',
+                'package2-price': 'desde 5.800 €',
+                'package2-outcome': '<strong>Resultado:</strong> Tiempos de respuesta a preguntas sobre documentos de semanas a minutos.',
+                'package2-details-title': 'Más detalles',
+                'package2-details': '<li>Ingestión y vectorización de documentos</li><li>Búsqueda semántica y recuperación de contexto</li><li>Capa de rol/permiso</li><li>Bucle de retroalimentación/métricas de calidad</li><li>Opcional: Hosting on-prem/nube europea aislada</li>',
+                'package3-title': 'Entrenamiento de Codificación Vibe (1 Día)',
+                'package3-subtitle': 'Taller intensivo para equipos: Habilidades prácticas de IA y Low-Code.',
+                'package3-price': 'desde 1.450 €/día',
+                'package3-outcome': '<strong>Resultado:</strong> El equipo puede evaluar y crear sus propias ideas de IA/automatización.',
+                'package3-details-title': 'Más detalles',
+                'package3-details': '<li>Introducción y campos de potencial</li><li>Patrones de prompts y asistencia de IA</li><li>Prototipado rápido de Low-Code</li><li>Integración y automatización</li><li>Desafío de equipo y cierre</li>',
+                'package4-title': 'Taller de Estrategia IA / Design Thinking',
+                'package4-subtitle': 'Identificación de casos de uso, priorización, valor comercial y hoja de ruta.',
+                'package4-price': 'desde 2.000 €/día',
+                'package4-outcome': '<strong>Resultado:</strong> Hoja de ruta de IA priorizada con wins rápidos e iniciativas estratégicas.',
+                'package4-details-title': 'Más detalles',
+                'package4-details': '<li>Descubrimiento: Objetivos comerciales, puntos de dolor, situación de datos</li><li>Ideación: Embudo de casos de uso, impacto vs. esfuerzo</li><li>Priorización: Wins rápidos vs. apuestas estratégicas</li><li>Hoja de ruta y enfoques de gobernanza</li><li>Deck de resultados documentado</li>',
+                'package5-title': 'Due Diligence Técnica de IA',
+                'package5-subtitle': 'Evaluación técnica: Arquitectura, calidad de datos, DSGVO, escalabilidad.',
+                'package5-price': 'desde 5.000 €',
+                'package5-outcome': '<strong>Resultado:</strong> Resumen ejecutivo + evaluación detallada (PDF/deck) con análisis de riesgos.',
+                'package5-details-title': 'Más detalles',
+                'package5-details': '<li>Arquitectura y componentes (servicios, pipelines, modelos)</li><li>Calidad de datos, acceso, clasificación y gobernanza</li><li>Seguridad y cumplimiento (DSGVO, Least Privilege, logging)</li><li>Escalabilidad y modelo de costos</li><li>Matriz de riesgos y madurez + recomendaciones</li>',
+                'package6-title': 'Gemba Walk',
+                'package6-subtitle': 'Análisis in situ (hasta 8 horas) + taller de seguimiento y hoja de ruta.',
+                'package6-price': 'desde 1.600 €/día',
+                'package6-outcome': '<strong>Resultado:</strong> Wins rápidos identificados y hoja de ruta estructurada para potenciales de digitalización.',
+                'package6-details-title': 'Más detalles',
+                'package6-details': '<li>Llamada de preparación (30–45 min) para aclarar objetivos</li><li>Recorrido in situ (hasta 8h) con entrevistas</li><li>Identificación de wins rápidos y palancas estructurales</li><li>Taller de seguimiento (remoto) para priorización de medidas</li><li>Hoja de ruta y próximos pasos (documentación)</li>',
                 'contact-title': 'Hablemos',
                 'contact-intro': '¿Listo para dar forma al futuro digital de su empresa? Estoy emocionado por sus desafíos e ideas. <br>Póngase en contacto conmigo directamente, o encontremos una cita informal de introducción a través de mi <strong>página de reservas</strong>.'
             }
@@ -1079,11 +1295,19 @@
                 });
             }
 
-            // Option clicks
+            // Option clicks - redirect to correct language file
             options.forEach(opt => {
                 opt.addEventListener('click', (e) => {
+                    e.preventDefault();
                     const lang = opt.getAttribute('data-lang');
-                    setLanguage(lang);
+                    const langFiles = {
+                        'de': 'index.html',
+                        'en': 'index-en.html',
+                        'es': 'index-es.html'
+                    };
+                    if (langFiles[lang]) {
+                        window.location.href = langFiles[lang];
+                    }
                 });
             });
 
@@ -1092,10 +1316,14 @@
                 if (!e.target.closest('.language-dropdown')) closeMenu();
             });
 
-            // Initialize
-            const savedLang = localStorage.getItem('language') || 'es';
-            if (flagMap[savedLang] && currentFlag) currentFlag.src = flagMap[savedLang];
-            setLanguage(savedLang);
+            // Initialize - set correct flag for current page
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            let currentLang = 'de';
+            if (currentPage.includes('index-en')) currentLang = 'en';
+            else if (currentPage.includes('index-es')) currentLang = 'es';
+            
+            if (flagMap[currentLang] && currentFlag) currentFlag.src = flagMap[currentLang];
+            options.forEach(o => o.classList.toggle('selected', o.getAttribute('data-lang') === currentLang));
         })();
         const hamburgerMenu = document.getElementById('hamburger-menu');
         const navLinks = document.querySelector('.nav-links');
